@@ -9,17 +9,29 @@ use Symfony\Component\Yaml\Yaml;
 class Configuration
 {
     private $data = [];
-    private $filename;
+    private $configFilename;
+    private $dataFilename;
 
     public function __construct()
     {
-        $this->filename = dirname(dirname(__DIR__)) . '/data/table.yml';
+        $this->configFilename = dirname(dirname(__DIR__)) . '/config/config.yml';
+        $this->dataFilename = dirname(dirname(__DIR__)) . '/data/table.yml';
         $this->initialize();
     }
 
     private function initialize()
     {
-        $this->data = Yaml::parseFile($this->filename);
+        $this->config = Yaml::parseFile($this->configFilename);
+        $this->data = Yaml::parseFile($this->dataFilename);
+    }
+
+
+    /**
+     * @return array
+     */
+    public function getConfig(): array
+    {
+        return $this->config;
     }
 
     /**
@@ -45,6 +57,6 @@ class Configuration
     {
         $yaml = Yaml::dump($this->data);
 
-        file_put_contents($this->filename, $yaml);
+        file_put_contents($this->dataFilename, $yaml);
     }
 }

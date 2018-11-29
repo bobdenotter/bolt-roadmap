@@ -66,89 +66,16 @@ HELP
 
     protected function execute(InputInterface $input, OutputInterface $output)
     {
-        $config = $this->configuration->get();
+        $config = $this->configuration->getConfig();
 
         $slugify = Slugify::create();
 
-        $results = [];
+        $milestones = $this->client->api('issue')->milestones()->all($config['org'], $config['repository']);
 
-        try {
-            foreach (collect($config)->sortBy('updated') as $key => $item) {
-                echo ' . ' . $item['name'];
 
-                if (empty($item['repository'])) {
-                    echo " - No repository defined \n";
-                    continue;
-                }
+//        dump($milestones);
 
-                if ($item['updated'] === date('Y-m-d')) {
-                    echo " - Updated today already \n";
-                    continue;
-                }
-
-                $reponame = $this->getReponame($item['repository']);
-
-                $info = $this->getInfo($reponame);
-
-                $commits = $this->getCommits($reponame);
-
-		// Sometimes the commits aren't fetched correctly. If so, skip.
-		if ( (int) $commits['year'] === 0) {
-                    echo " - No commits were fetched \n";
-                    continue;
-		}
-
-                $row = [
-                    'name' => $item['name'],
-                    'open_issues' => $info['open_issues_count'],
-                    'opened_recently' => $this->getRecentlyOpenedIssues($reponame),
-                    'closed_recently' => $this->getRecentlyClosedIssues($reponame),
-                    'stargazers' => $info['stargazers_count'],
-                    'forks' => $info['forks_count'],
-                    'license' => $info['license']['spdx_id'],
-                    'commits_year' => $commits['year'],
-                    'commits_month' => $commits['month'],
-                    'updated' => date('Y-m-d'),
-                ];
-
-                $statistics = new Statistics();
-                $statistics->setName($slugify->slugify($item['name']))
-                    ->setOpenIssues($row['open_issues'])
-                    ->setOpenedRecently($row['opened_recently'])
-                    ->setClosedRecently($row['closed_recently'])
-                    ->setStargazers($row['stargazers'])
-                    ->setForks($row['forks'])
-                    ->setCommitsYear($row['commits_year'])
-                    ->setCommitsMonth($row['commits_month'])
-                    ->setTimestamp(Carbon::now());
-
-                $this->objectManager->persist($statistics);
-
-                $config[$key] = array_merge($item, $row);
-                $config[$key]['description'] = $info['description'];
-                $config[$key]['topics'] = $this->getTopics($reponame);
-
-                $results[] = $row;
-            }
-        } catch (ApiLimitExceedException $exception) {
-            echo "\nGithub API Limit reached!!\n";
-        }
-
-        echo "\n";
-
-        $this->objectManager->flush();
-
-        if (count($results) > 0) {
-            $header = array_keys($results[0]);
-
-            $io = new SymfonyStyle($input, $output);
-            $io->table(
-                $header,
-                $results
-            );
-        }
-
-        $this->configuration->set($config);
+        $this->configuration->set($milestones);
         $this->configuration->write();
     }
 
