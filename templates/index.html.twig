@@ -13,6 +13,14 @@
             <li>Issues: {{ milestone.open_issues }} open issues / {{ milestone.closed_issues }} closed issues</li>
         </ul>
 
+        {#{{ dump(milestone.issues) }}#}
+
+        <h3>Issues:</h3>
+        <ul>
+        {% for issue in milestone.issues %}
+            <li>{{ issue.title }} <a href="{{ issue.url }}">#{{ issue.number }}</a></li>
+        {% endfor %}
+        </ul>
         <hr>
 
     {% endfor %}

@@ -72,8 +72,9 @@ HELP
 
         $milestones = $this->client->api('issue')->milestones()->all($config['org'], $config['repository']);
 
-
-//        dump($milestones);
+        foreach ($milestones as $key => $milestone) {
+            $milestones[$key]['issues'] = $this->client->api('issue')->all($config['org'], $config['repository'], array('milestone' => $milestone['number']));
+        }
 
         $this->configuration->set($milestones);
         $this->configuration->write();
