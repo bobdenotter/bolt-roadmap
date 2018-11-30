@@ -4,9 +4,9 @@
 
     {% for milestone in data %}
 
-        <h2>{{ milestone.title }} <small>(<a href="{{ milestone.html_url }}">link</a>)</small></h2>
+        <h2>{{ milestone.title }} <small>(<a href="{{ milestone.html_url }}">#{{ milestone.number }}</a>)</small></h2>
 
-        <pre>{{ milestone.description }}</pre>
+        {{ milestone.description|markdown }}
 
         <ul>
             <li>due_on: {{ milestone.due_on }}</li>
@@ -18,7 +18,9 @@
         <h3>Issues:</h3>
         <ul>
         {% for issue in milestone.issues %}
+            {% if issue.state == "closed" %}<s>{% endif %}
             <li>{{ issue.title }} <a href="{{ issue.url }}">#{{ issue.number }}</a></li>
+            {% if issue.state == "closed" %}</s>{% endif %}
         {% endfor %}
         </ul>
         <hr>

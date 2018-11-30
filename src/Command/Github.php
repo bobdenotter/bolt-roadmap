@@ -73,7 +73,11 @@ HELP
         $milestones = $this->client->api('issue')->milestones()->all($config['org'], $config['repository']);
 
         foreach ($milestones as $key => $milestone) {
-            $milestones[$key]['issues'] = $this->client->api('issue')->all($config['org'], $config['repository'], array('milestone' => $milestone['number']));
+            $milestones[$key]['issues'] = $this->client->api('issue')->all(
+                $config['org'],
+                $config['repository'],
+                ['milestone' => $milestone['number'], 'state' => 'all']
+            );
         }
 
         $this->configuration->set($milestones);
