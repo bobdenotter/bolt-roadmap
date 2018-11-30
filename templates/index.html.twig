@@ -19,7 +19,12 @@
         <ul>
         {% for issue in milestone.issues %}
             {% if issue.state == "closed" %}<s>{% endif %}
-            <li>{{ issue.title }} <a href="{{ issue.url }}">#{{ issue.number }}</a></li>
+            <li>{{ issue.title }} <a href="{{ issue.html_url }}">#{{ issue.number }}</a>
+                {% for label in issue.labels %}
+                    <span style="background-color: #{{ label.color }}; color: #ffffff" class="badge badge-primary">{{ label.name }}</span>
+                {% endfor %}
+                {#{{ issue.body|markdown }}#}
+            </li>
             {% if issue.state == "closed" %}</s>{% endif %}
         {% endfor %}
         </ul>
