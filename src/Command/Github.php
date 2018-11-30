@@ -30,18 +30,11 @@ class Github extends Command
     /** @var ObjectManager */
     private $objectManager;
 
-    public function __construct(Configuration $configuration, ObjectManager $objectManager)
+    public function __construct(Configuration $configuration, ObjectManager $objectManager, Client $client)
     {
         parent::__construct();
         $this->configuration = $configuration;
-        $this->client = new Client();
-
-        $token = getenv('GITHUB_SECRET');
-        if (!isset($token)) {
-            dd('Github token is not set.');
-        }
-        $this->client->authenticate($token, null, Client::AUTH_HTTP_TOKEN);
-
+        $this->client = $client;
         $this->objectManager = $objectManager;
     }
 
