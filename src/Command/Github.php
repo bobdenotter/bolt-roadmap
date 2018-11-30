@@ -12,6 +12,7 @@ use Doctrine\Common\Persistence\ObjectManager;
 use Github\Client;
 use Github\Exception\ApiLimitExceedException;
 use Symfony\Component\Console\Command\Command;
+use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -65,18 +66,34 @@ HELP
 
         $milestones = $this->client->api('issue')->milestones()->all($config['org'], $config['repository']);
 
+        $progressBar = new ProgressBar($output, count($milestones));
+
+
         foreach ($milestones as $key => $milestone) {
-            $milestones[$key]['issues'] = $this->client->api('issue')->all(
+            $tempissues = collect($this->client->api('issue')->all(
                 $config['org'],
                 $config['repository'],
                 ['milestone' => $milestone['number'], 'state' => 'all']
-            );
+            ));
+
+            $milestones[$key]['issues'] = [];
+
+            foreach($tempissues as $issue) {
+                $milestones[$key]['issues'][$issue['number']] = collect($issue)
+                    ->only(['html_url', 'number', 'title', 'assignee', 'labels', 'state', 'created_at', 'updated_at', 'closed_at', 'body'])
+                    ->all();
+
+            }
+            $progressBar->advance();
+
         }
 
         $this->configuration->set($milestones);
         $this->configuration->write();
-        
-        $output->writeLn(sprintf("Got %d milestones!", count($milestones)));
+
+        $progressBar->finish();
+
+        $output->writeLn(sprintf("\n\nGot %d milestones!", count($milestones)));
     }
 
     private function getReponame($url)

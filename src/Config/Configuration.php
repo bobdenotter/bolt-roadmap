@@ -55,7 +55,7 @@ class Configuration
      */
     public function write()
     {
-        $yaml = Yaml::dump($this->data);
+        $yaml = Yaml::dump($this->data, 4);
 
         file_put_contents($this->dataFilename, $yaml);
     }
