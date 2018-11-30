@@ -6,7 +6,7 @@
     node_id: MDk6TWlsZXN0b25lMzgyODMzNA==
     number: 3
     title: 'Bolt 4 alpha 1'
-    description: "::Key feature: Have a MVP, working setup::\n\n\n\n* Make Multilingual #136\n\n* Create Vue Components for all Field Types #132\n* Make Setcontent work #41\n* Make Taxonomies work #164\n* Make Relations work #163\n* Add unit testing scaffolding #168"
+    description: "**Key feature: Have an MVP, working setup**\r\n\r\nFirst 'working' release, with a minimal but working featureset."
     creator:
         login: bobdenotter
         id: 1833361
@@ -30,7 +30,7 @@
     closed_issues: 3
     state: open
     created_at: '2018-11-17T11:30:06Z'
-    updated_at: '2018-11-30T15:16:57Z'
+    updated_at: '2018-11-30T20:17:33Z'
     due_on: '2018-12-17T08:00:00Z'
     closed_at: null
     issues:
@@ -53,7 +53,7 @@
             state: open
             assignee: null
             created_at: '2018-11-30T10:32:22Z'
-            updated_at: '2018-11-30T13:30:16Z'
+            updated_at: '2018-11-30T20:04:29Z'
             closed_at: null
             body: "_Presuming that the translate functionality and the tabs/group will work comparably with Bolt 3.6.X/ Bolttranslate extension in Bolt 4.0:_\r\n\r\nWhen an editor switches languages while in a certain tab/group for a record\r\ne.g. `/bolt/editcontent/siteblocks/1?_locale=en#footer`\r\nhe is sent to `bolt/editcontent/siteblocks/1?_locale=nl` and will have to perform a click to get back to\r\n`/bolt/editcontent/siteblocks/1?_locale=nl#footer`\r\n\r\nIt is likely (at least, I think so) that the editor will want to continue working on the same tab/group in the other language so it would be good if the `#anchor` is added behind the link in the language switch."
         168:
