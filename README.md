@@ -13,6 +13,7 @@ A repo to keep track of the Bolt Roadmap.
  
   - Clone repo
   - Run `composer install`
+  - Add your personal Github token to the `GITHUB_SECRET` environment variable in the `.env` file
   - Run `bin/console app:github` to fetch data
   - Run `bin/console server:start` to start a webserver, and see the results in a browser
   
