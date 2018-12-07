@@ -11,6 +11,7 @@ class Configuration
     private $data = [];
     private $configFilename;
     private $dataFilename;
+    private $modifiedAt;
 
     public function __construct()
     {
@@ -23,6 +24,7 @@ class Configuration
     {
         $this->config = Yaml::parseFile($this->configFilename);
         $this->data = Yaml::parseFile($this->dataFilename);
+        $this->modifiedAt = filemtime($this->dataFilename);
     }
 
 
@@ -59,4 +61,10 @@ class Configuration
 
         file_put_contents($this->dataFilename, $yaml);
     }
+    
+    public function modifiedAt() 
+    {
+        return $this->modifiedAt;
+    }
+    
 }

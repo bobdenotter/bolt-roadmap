@@ -14,10 +14,14 @@ class Table extends AbstractController
 {
     /** @var Collection */
     private $config;
+    
+    /** @var string */
+    private $modifiedAt = '';
 
     public function __construct(Configuration $config)
     {
         $this->config = collect($config->get());
+        $this->modifiedAt = $config->modifiedAt();
     }
 
     /**
@@ -35,6 +39,7 @@ class Table extends AbstractController
 
         $context = [
             'data' => $data,
+            'updated' => $this->modifiedAt,
         ];
 
         return $this->render('index.html.twig', $context);
