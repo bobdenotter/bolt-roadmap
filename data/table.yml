@@ -26,14 +26,26 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 10
-    closed_issues: 3
+    open_issues: 4
+    closed_issues: 9
     state: open
     created_at: '2018-11-17T11:30:06Z'
-    updated_at: '2018-12-02T13:20:36Z'
+    updated_at: '2019-01-02T09:31:23Z'
     due_on: '2018-12-17T08:00:00Z'
     closed_at: null
     issues:
+        223:
+            html_url: 'https://github.com/bolt/four/issues/223'
+            number: 223
+            title: 'Two issues with `multiselect`'
+            user: bobdenotter
+            labels: [{ id: 1101873370, node_id: MDU6TGFiZWwxMTAxODczMzcw, url: 'https://api.github.com/repos/bolt/four/labels/priority:%20high', name: 'priority: high', color: eb6420, default: false }, { id: 1101873383, node_id: MDU6TGFiZWwxMTAxODczMzgz, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Vue', name: 'topic: Vue', color: 52B988, default: false }]
+            state: closed
+            assignee: jackiboy
+            created_at: '2018-12-22T11:57:43Z'
+            updated_at: '2019-01-02T09:30:48Z'
+            closed_at: '2019-01-02T09:30:48Z'
+            body: "The new \"multiselect\" items work, but there are some missing bits to make them fully useable: \r\n\r\n```\r\n        <editor-select\r\n            :value=\"'{{ value }}'\".  <- There\r\n            :name=\"'{{ name }}'\"\r\n            :id=\"'{{ id }}'\"\r\n            :options=\"{{ options|json_encode() }}\"\r\n            :form=\"'{{ form }}'\"\r\n        ></editor-select>\r\n```\r\n\r\n1) You can pass in a single value like `books` or `movies` and it works. It seems like you can't pass in an array like `[\"books\", \"movies\"]` to select 2 initially.\r\n\r\n\r\n2) Selected values don't persist when `POST`ing. You can select items, but these aren't included when the form is submitted\r\n\r\n3) There's an odd empty initial selection: \r\n\r\n![screenshot 2018-12-22 at 12 56 48](https://user-images.githubusercontent.com/1833361/50374101-19ce9a80-05e9-11e9-946a-93c0a21df366.png)\r\n\r\n\r\n@jackiboy Could you take a look at these? "
         208:
             html_url: 'https://github.com/bolt/four/issues/208'
             number: 208
@@ -43,21 +55,9 @@
             state: open
             assignee: JarJak
             created_at: '2018-11-30T15:16:57Z'
-            updated_at: '2018-12-01T10:15:56Z'
+            updated_at: '2018-12-04T10:36:59Z'
             closed_at: null
             body: 'PHPUnit, Behat, maybe PHPSpec?'
-        180:
-            html_url: 'https://github.com/bolt/four/issues/180'
-            number: 180
-            title: '"Translate" suggestion'
-            user: evertalbers
-            labels: [{ id: 1101873388, node_id: MDU6TGFiZWwxMTAxODczMzg4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Multilingual%20%F0%9F%8C%90', name: 'topic: Multilingual 🌐', color: fbca04, default: false }, { id: 1145610340, node_id: MDU6TGFiZWwxMTQ1NjEwMzQw, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20UX', name: 'topic: UX', color: dd71bd, default: false }]
-            state: open
-            assignee: bobdenotter
-            created_at: '2018-11-30T10:32:22Z'
-            updated_at: '2018-12-02T12:26:46Z'
-            closed_at: null
-            body: "_Presuming that the translate functionality and the tabs/group will work comparably with Bolt 3.6.X/ Bolttranslate extension in Bolt 4.0:_\r\n\r\nWhen an editor switches languages while in a certain tab/group for a record\r\ne.g. `/bolt/editcontent/siteblocks/1?_locale=en#footer`\r\nhe is sent to `bolt/editcontent/siteblocks/1?_locale=nl` and will have to perform a click to get back to\r\n`/bolt/editcontent/siteblocks/1?_locale=nl#footer`\r\n\r\nIt is likely (at least, I think so) that the editor will want to continue working on the same tab/group in the other language so it would be good if the `#anchor` is added behind the link in the language switch."
         168:
             html_url: 'https://github.com/bolt/four/issues/168'
             number: 168
@@ -76,11 +76,11 @@
             title: '⭐️ Make "Taxonomies" work '
             user: bobdenotter
             labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2018-11-26T20:08:53Z'
-            updated_at: '2018-11-26T21:06:45Z'
-            closed_at: null
+            updated_at: '2019-01-02T09:31:19Z'
+            closed_at: '2019-01-02T09:31:19Z'
             body: "Like in Bolt 3, there are three main types of taxonomy: \r\n\r\n - Tags -> Freeform, can be added on the fly\r\n - Categories -> A little more strict, need to be predefined, but can have multiple (both \"multiple category taxonomies\" for one contenttype, as well as \"multiple categories\" per Record\r\n - Groups -> Strict. A contenttype (and a 'Record', can have only one group maximum\r\n\r\n"
         163:
             html_url: 'https://github.com/bolt/four/issues/163'
@@ -100,11 +100,11 @@
             title: 'PHPStan level bump'
             user: JarJak
             labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }]
-            state: open
+            state: closed
             assignee: JarJak
             created_at: '2018-11-22T14:17:11Z'
-            updated_at: '2018-12-02T12:26:07Z'
-            closed_at: null
+            updated_at: '2018-12-15T13:14:00Z'
+            closed_at: '2018-12-15T10:50:18Z'
             body: 😈
         147:
             html_url: 'https://github.com/bolt/four/issues/147'
@@ -136,11 +136,11 @@
             title: '⭐️ Make "Multilingual backend interface" work '
             user: bobdenotter
             labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }, { id: 1101873388, node_id: MDU6TGFiZWwxMTAxODczMzg4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Multilingual%20%F0%9F%8C%90', name: 'topic: Multilingual 🌐', color: fbca04, default: false }]
-            state: open
+            state: closed
             assignee: bobdenotter
             created_at: '2018-11-17T12:19:27Z'
-            updated_at: '2018-12-02T12:26:52Z'
-            closed_at: null
+            updated_at: '2019-01-02T09:31:23Z'
+            closed_at: '2019-01-02T09:31:23Z'
             body: ''
         132:
             html_url: 'https://github.com/bolt/four/issues/132'
@@ -151,7 +151,7 @@
             state: open
             assignee: null
             created_at: '2018-11-17T11:50:41Z'
-            updated_at: '2018-11-30T20:01:10Z'
+            updated_at: '2018-12-04T10:23:23Z'
             closed_at: null
             body: " - [ ] #118 Make \"Geolocation\" field (traditional)\r\n - [ ] #119 Make \"Embed\" / \"Video\" field (traditional)\r\n - [ ] #120 Make \"Select\" field to select items from other content.\r\n - [ ] #123 Make \"Geolocation\" a Vue component.\r\n - [ ] #124 Make \"Embed\" a Vue component.\r\n - [ ] #133 Make \"Multi-select\" Vue Component\r\n - [ ] #36 VC | Checkbox Component\r\n - [x] #49 After uploading an image, the filename should be updated"
         130:
@@ -172,11 +172,11 @@
             title: '[WIP] setcontent'
             user: xiaohutai
             labels: [{ id: 1101873386, node_id: MDU6TGFiZWwxMTAxODczMzg2, url: 'https://api.github.com/repos/bolt/four/labels/status:%20in%20progress', name: 'status: in progress', color: cccccc, default: false }, { id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }]
-            state: open
+            state: closed
             assignee: bobdenotter
             created_at: '2018-11-16T09:43:07Z'
-            updated_at: '2018-12-02T12:24:29Z'
-            closed_at: null
+            updated_at: '2018-12-14T18:52:09Z'
+            closed_at: '2018-12-14T15:51:11Z'
             body: "Some basic features `setcontent` calls working, based on `Bolt\\Storage\\Query\\Query` from Bolt 3.\r\n\r\nThis is the first of the `setcontent` iteration (based on @rossriley's work for Bolt 3).\r\nSome complex situations arise because a content-type is not contained in one table anymore.\r\n\r\nSo we have `bolt_content` with a has-many relationship to `bolt_field`.\r\n\r\nA distinction is to be made when query-ing:\r\n- Fields from the base table `bolt_content`. This is very simple and remains similar to Bolt 3's way for fetching content.\r\n- Fields from the fields table `bolt_field`. A bit more complex, because we need to use `JOIN`s.\r\n\r\n\r\n### Basic\r\n\r\n- ✔️ `{contenttype}`\r\n- ✔️ `{contenttype}/first/{number}`\r\n- ✔️ `{contenttype}/last/{number}`\r\n- ❌ `{contenttype}/random/{number}`\r\n  - `random` is not going to work with Doctrine ORM queries, see [answer on Stack Oveflow](https://stackoverflow.com/questions/10762538/how-to-select-randomly-with-doctrine) for info.\r\n  - An alternative is to make a special Twig function/filter to handle random records.\r\n- ✔️ `{contenttype}/{id}`\r\n- ✔️ `{contenttype}/{slug}`\r\n\r\n### WHERE\r\n\r\n- ✔️ `{key}: {value}`\r\n- ✔️ `{key}: {operator}{value}` where operator is one of `%` `<` `>` `<=` `>=`\r\n  - ⚠️ Currently the operations will not work for numbers/dates/etc. because of JSON-encoded values.\r\n- ✔️ `author: {id}` replaces `ownerid` from Bolt 3\r\n\r\n### WHERE advanced\r\n\r\n- ❌ `{key}: {value1} || {value2}` or `{key}: {value1} && {value2}`\r\n  - Currently only works for columns in `bolt_content`\r\n- ❌ `\"{key1} ||| {key2}\": \"{value1} ||| {value2}\"`\r\n  - Currently only works for columns in `bolt_content`\r\n- ❌ `{key}: '>now'` and other special datetime selectors (e.g. `now`, `today`, `yesterday`, `last year`, `next thursday`).\r\n  - Currently do not work at all.\r\n\r\n### Special\r\n\r\n- ✔️ `limit {number}`\r\n- ✔️ `orderby {field}` or `orderby -{field}`\r\n  - ⚠️ This works for fields that have only a single value (think of it as a column)\r\n  - ✔️ Multiple sortorders do work (comma-separated)\r\n- ✔️ `returnsingle`\r\n- ✔️ `printquery`\r\n  - ⚠️ Currently shows DQL. Let's see if we can show a _runnable query_ instead.\r\n\r\n\r\n### Advanced\r\n\r\nPagination and Search are not implemented yet.\r\n\r\n- ❌ `allowpaging`\r\n- ❌ `{contenttype}/search/{num} where filter: {term}`\r\n- ❌ `{ct1},{ct2},{ctN}/search/{num} where filter: {term}`\r\n\r\n\r\n### Misc\r\n\r\n- Implementations for locales, taxonomies and relationships.\r\n- Proper integration with Config + ContentType data (such as max results per page).\r\n- Remove all legacy stuff for real."
         41:
             html_url: 'https://github.com/bolt/four/issues/41'
@@ -184,11 +184,11 @@
             title: 'Make ''setcontent'''
             user: bobdenotter
             labels: [{ id: 1101909520, node_id: MDU6TGFiZWwxMTAxOTA5NTIw, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20splitting', name: 'tag: needs splitting', color: b88eed, default: false }, { id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }, { id: 1101873384, node_id: MDU6TGFiZWwxMTAxODczMzg0, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Twig', name: 'topic: Twig', color: BBCD3B, default: false }]
-            state: open
+            state: closed
             assignee: xiaohutai
             created_at: '2018-10-23T19:12:14Z'
-            updated_at: '2018-11-30T12:32:13Z'
-            closed_at: null
+            updated_at: '2018-12-14T17:11:51Z'
+            closed_at: '2018-12-14T17:11:51Z'
             body: ''
 -
     url: 'https://api.github.com/repos/bolt/four/milestones/7'
@@ -1034,14 +1034,26 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 3
+    open_issues: 5
     closed_issues: 0
     state: open
     created_at: '2018-11-30T09:50:04Z'
-    updated_at: '2018-12-02T13:04:11Z'
+    updated_at: '2018-12-14T10:58:27Z'
     due_on: '2050-01-01T08:00:00Z'
     closed_at: null
     issues:
+        215:
+            html_url: 'https://github.com/bolt/four/issues/215'
+            number: 215
+            title: 'Hash on tabs'
+            user: bobdenotter
+            labels: [{ id: 1101903625, node_id: MDU6TGFiZWwxMTAxOTAzNjI1, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Javascript', name: 'topic: Javascript', color: e5c870, default: false }, { id: 1145610340, node_id: MDU6TGFiZWwxMTQ1NjEwMzQw, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20UX', name: 'topic: UX', color: dd71bd, default: false }]
+            state: open
+            assignee: jackiboy
+            created_at: '2018-12-11T16:25:35Z'
+            updated_at: '2018-12-14T10:58:10Z'
+            closed_at: null
+            body: " - When using the 'tabs' on an edit page, the \"hash\" in the URL doesn't update..\r\n - When actively navigating to `/bolt/edit/1#media`, the 'media' tab should be active\r\n\r\n![schermafbeelding_2018-12-11_om_17_18_29](https://user-images.githubusercontent.com/1833361/49814093-348f4c80-fd69-11e8-8811-5f9f3d5a4397.png)\r\n\r\nAdditionally, when switching locales, the browser should navigate to the updated URL, _with_ the hash included. Something like this in `assets/js/app/editor/Components/General/Language/Language.vue`: \r\n\r\n```javascript\r\n    switchLocale(){\r\n      const locale = this.locale.link  + window.location.hash.substr(1));\r\n\r\n      return window.location.href = locale;\r\n    }\r\n``` "
         188:
             html_url: 'https://github.com/bolt/four/issues/188'
             number: 188
@@ -1078,3 +1090,15 @@
             updated_at: '2018-12-01T10:23:10Z'
             closed_at: null
             body: ''
+        180:
+            html_url: 'https://github.com/bolt/four/issues/180'
+            number: 180
+            title: '"Translate" suggestion'
+            user: evertalbers
+            labels: [{ id: 1101873388, node_id: MDU6TGFiZWwxMTAxODczMzg4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Multilingual%20%F0%9F%8C%90', name: 'topic: Multilingual 🌐', color: fbca04, default: false }, { id: 1145610340, node_id: MDU6TGFiZWwxMTQ1NjEwMzQw, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20UX', name: 'topic: UX', color: dd71bd, default: false }]
+            state: open
+            assignee: bobdenotter
+            created_at: '2018-11-30T10:32:22Z'
+            updated_at: '2018-12-14T10:58:27Z'
+            closed_at: null
+            body: "_Presuming that the translate functionality and the tabs/group will work comparably with Bolt 3.6.X/ Bolttranslate extension in Bolt 4.0:_\r\n\r\nWhen an editor switches languages while in a certain tab/group for a record\r\ne.g. `/bolt/editcontent/siteblocks/1?_locale=en#footer`\r\nhe is sent to `bolt/editcontent/siteblocks/1?_locale=nl` and will have to perform a click to get back to\r\n`/bolt/editcontent/siteblocks/1?_locale=nl#footer`\r\n\r\nIt is likely (at least, I think so) that the editor will want to continue working on the same tab/group in the other language so it would be good if the `#anchor` is added behind the link in the language switch."
