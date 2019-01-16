@@ -62,12 +62,13 @@ HELP
     {
         $config = $this->configuration->getConfig();
 
-        $slugify = Slugify::create();
-
-        $milestones = $this->client->api('issue')->milestones()->all($config['org'], $config['repository']);
+        $milestones = $this->client->api('issue')->milestones()->all(
+            $config['org'],
+            $config['repository'],
+            ['state' => 'all']
+        );
 
         $progressBar = new ProgressBar($output, count($milestones));
-
 
         foreach ($milestones as $key => $milestone) {
             $tempissues = collect($this->client->api('issue')->all(
@@ -75,6 +76,11 @@ HELP
                 $config['repository'],
                 ['milestone' => $milestone['number'], 'state' => 'all']
             ));
+
+            $output->writeln(
+                'Milestone: ' . $milestone['title'] . "\n",
+                OutputInterface::VERBOSITY_VERBOSE
+            );
 
             $milestones[$key]['issues'] = [];
 
@@ -98,66 +104,5 @@ HELP
         $progressBar->finish();
 
         $output->writeLn(sprintf("\n\nGot %d milestones!", count($milestones)));
-    }
-
-    private function getReponame($url)
-    {
-        $url = parse_url($url);
-
-        return ltrim($url['path'], '/');
-    }
-
-    private function getRecentlyOpenedIssues($reponame)
-    {
-        $query = sprintf(
-            'repo:%s is:open created:>%s',
-            $reponame,
-            date('Y-m-d', strtotime('-30 days'))
-        );
-        $issues = $this->client->api('search')->issues($query);
-
-        return $issues['total_count'];
-    }
-
-    private function getRecentlyClosedIssues($reponame)
-    {
-        $query = sprintf(
-            'repo:%s is:closed closed:>%s',
-            $reponame,
-            date('Y-m-d', strtotime('-30 days'))
-        );
-        $issues = $this->client->api('search')->issues($query);
-
-        return $issues['total_count'];
-    }
-
-    private function getInfo($reponame)
-    {
-        $reponame = explode('/', $reponame);
-
-        return $this->client->api('repo')->show($reponame[0], $reponame[1]);
-    }
-
-    private function getTopics($reponame)
-    {
-        $reponame = explode('/', $reponame);
-
-        $topics = $this->client->api('repo')->topics($reponame[0], $reponame[1]);
-
-        return $topics['names'];
-    }
-
-    private function getCommits($reponame)
-    {
-        $reponame = explode('/', $reponame);
-
-        $commits = collect($this->client->api('repo')->activity($reponame[0], $reponame[1]));
-
-        $res = [
-            'year' => $commits->sum('total'),
-            'month' => $commits->slice(-4)->sum('total'),
-        ];
-
-        return $res;
     }
 }

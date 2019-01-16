@@ -1,0 +1,77 @@
+<li>
+    <h2>{{ milestone.title }}</h2>
+
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: {{ milestone.closed_issues / (milestone.closed_issues + milestone.open_issues + 0.1) * 100 }}%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            {{ milestone.description|markdown }}
+
+            <ul>
+                <li>Milestone: <a href="{{ milestone.html_url }}">#{{ milestone.number }}</a></li>
+                <li>Due on: {{ milestone.due_on|date('Y-m-d') }}</li>
+                <li>Closed on: {{  milestone.closed_at ? milestone.closed_at|date('Y-m-d') : "-" }}</li>
+                <li>Issues: {{ milestone.open_issues }} open / {{ milestone.closed_issues }} closed issues</li>
+            </ul>
+
+        </div>
+        <div class="col-sm-8">
+
+
+            {% for issue in milestone.issues if issue.state == "open" %}
+
+            {%  if loop.first %}
+            <strong>Open Issues / Epics:</strong>
+            <ul>
+                {% endif %}
+
+                <li>{{ issue.title }} <a href="{{ issue.html_url }}">#{{ issue.number }}</a>
+                    {#{{ issue.body|markdown }}#}
+                    <small>(
+                        {%- if issue.user == issue.assignee -%}<strong>{% endif %}{{ issue.user }}
+                            {%- if issue.user == issue.assignee -%}
+                        </strong>
+                    {%- elseif issue.assignee %}
+                        ➜ <strong>{{ issue.assignee }}</strong>
+                        {%- endif -%}
+                        )</small>
+
+                    {% for label in issue.labels %}
+                        <span style="background-color: #{{ label.color }}; color: #ffffff" class="badge badge-primary">{{ label.name }}</span>
+                    {% endfor %}
+                </li>
+
+                {% endfor %}
+
+                {# 😗🎶 #}
+                {% for issue in milestone.issues if issue.state == "open" %}
+                {%  if loop.first %}</ul>{% endif %}
+            {% endfor %}
+
+
+            {% for issue in milestone.issues if issue.state == "closed" %}
+            {%  if loop.first %}
+            <strong>Closed:</strong>
+            <ul>
+                {% endif %}
+                <s>
+                    <li>{{ issue.title }} <a href="{{ issue.html_url }}">#{{ issue.number }}</a>
+                        {% for label in issue.labels %}
+                            <span style="background-color: #{{ label.color }}; color: #ffffff" class="badge badge-primary">{{ label.name }}</span>
+                        {% endfor %}
+                    </li>
+                </s>
+
+                {% endfor %}
+
+                {# 😗🎶 #}
+                {% for issue in milestone.issues if issue.state == "closed" %}
+                {%  if loop.first %}</ul>{% endif %}
+            {% endfor %}
+
+        </div>
+    </div>
+
+</li>
