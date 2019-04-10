@@ -27,7 +27,10 @@
             <ul>
                 {% endif %}
 
-                <li>{{ issue.title }} <a href="{{ issue.html_url }}">#{{ issue.number }}</a>
+                <li>
+                    {% if issue.pull_request %} <a title='Pull Request'>✍️</a> {% endif %}
+
+                    {{ issue.title }} <a href="{{ issue.html_url }}">#{{ issue.number }}</a>
                     {#{{ issue.body|markdown }}#}
                     <small>(
                         {%- if issue.user == issue.assignee -%}<strong>{% endif %}{{ issue.user }}
@@ -41,15 +44,17 @@
                     {% for label in issue.labels %}
                         <span style="background-color: #{{ label.color }}; color: #ffffff" class="badge badge-primary">{{ label.name }}</span>
                     {% endfor %}
+
+
+
                 </li>
 
                 {% endfor %}
 
                 {# 😗🎶 #}
                 {% for issue in milestone.issues if issue.state == "open" %}
-                {%  if loop.first %}</ul>{% endif %}
-            {% endfor %}
-
+                    {% if loop.first %}</ul>{% endif %}
+                {% endfor %}
 
             {% for issue in milestone.issues if issue.state == "closed" %}
             {%  if loop.first %}

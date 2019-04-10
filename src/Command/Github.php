@@ -89,10 +89,11 @@ HELP
                 $issue['assignee'] = $issue['assignee'] ? $issue['assignee']['login'] : null;
                 $issue['user'] = $issue['user'] ? $issue['user']['login'] : null;
 
-                $milestones[$key]['issues'][$issue['number']] = collect($issue)
-                    ->only(['html_url', 'number', 'title', 'user', 'assignee', 'labels', 'state', 'created_at', 'updated_at', 'closed_at', 'body'])
-                    ->all();
+                $issue['pull_request'] = isset($issue['pull_request']) ? true : false;
 
+                $milestones[$key]['issues'][$issue['number']] = collect($issue)
+                    ->only(['html_url', 'number', 'title', 'user', 'assignee', 'labels', 'state', 'created_at', 'updated_at', 'closed_at', 'pull_request'])
+                    ->all();
             }
             $progressBar->advance();
 
