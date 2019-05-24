@@ -219,11 +219,11 @@
             number: 164
             title: '⭐️ Make "Taxonomies" work '
             user: bobdenotter
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
+            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }, { id: 1318694246, node_id: MDU6TGFiZWwxMzE4Njk0MjQ2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Taxonomies', name: 'topic: Taxonomies', color: 72c117, default: false }]
             state: closed
             assignee: null
             created_at: '2018-11-26T20:08:53Z'
-            updated_at: '2019-01-02T09:31:19Z'
+            updated_at: '2019-04-14T13:11:55Z'
             closed_at: '2019-01-02T09:31:19Z'
             pull_request: false
         152:
@@ -662,25 +662,121 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 7
-    closed_issues: 15
+    open_issues: 8
+    closed_issues: 28
     state: open
     created_at: '2018-11-17T11:30:34Z'
-    updated_at: '2019-04-10T07:49:05Z'
-    due_on: '2019-04-01T07:00:00Z'
+    updated_at: '2019-05-16T17:50:23Z'
+    due_on: '2019-05-31T07:00:00Z'
     closed_at: null
     issues:
+        426:
+            html_url: 'https://github.com/bolt/four/issues/426'
+            number: 426
+            title: 'Make "Change Content status" controller'
+            user: bobdenotter
+            labels: [{ id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-05-12T10:46:01Z'
+            updated_at: '2019-05-12T10:46:01Z'
+            closed_at: null
+            pull_request: false
+        425:
+            html_url: 'https://github.com/bolt/four/issues/425'
+            number: 425
+            title: 'Make "Delete Content" controller'
+            user: bobdenotter
+            labels: [{ id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-05-12T10:45:30Z'
+            updated_at: '2019-05-12T10:45:30Z'
+            closed_at: null
+            pull_request: false
+        424:
+            html_url: 'https://github.com/bolt/four/issues/424'
+            number: 424
+            title: 'Make "Duplicate Content" controller'
+            user: bobdenotter
+            labels: [{ id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-05-12T10:45:06Z'
+            updated_at: '2019-05-12T10:45:06Z'
+            closed_at: null
+            pull_request: false
+        421:
+            html_url: 'https://github.com/bolt/four/pull/421'
+            number: 421
+            title: 'Allow for caching of widgets'
+            user: bobdenotter
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2019-05-09T20:07:17Z'
+            updated_at: '2019-05-10T17:16:07Z'
+            closed_at: '2019-05-10T17:16:02Z'
+            pull_request: true
+        418:
+            html_url: 'https://github.com/bolt/four/pull/418'
+            number: 418
+            title: '[WIP] Editing relations'
+            user: bobdenotter
+            labels: {  }
+            state: open
+            assignee: null
+            created_at: '2019-05-07T19:30:02Z'
+            updated_at: '2019-05-22T12:08:50Z'
+            closed_at: null
+            pull_request: true
+        407:
+            html_url: 'https://github.com/bolt/four/issues/407'
+            number: 407
+            title: 'Missing attributes in `records|json_records`'
+            user: bobdenotter
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20bug%20%F0%9F%90%9B', name: 'tag: bug 🐛', color: d93f0b, default: false }]
+            state: closed
+            assignee: JarJak
+            created_at: '2019-04-19T16:03:10Z'
+            updated_at: '2019-05-10T12:41:29Z'
+            closed_at: '2019-05-10T12:41:29Z'
+            pull_request: false
+        406:
+            html_url: 'https://github.com/bolt/four/pull/406'
+            number: 406
+            title: 'Fields API'
+            user: JarJak
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2019-04-18T22:00:27Z'
+            updated_at: '2019-04-19T14:15:15Z'
+            closed_at: '2019-04-19T13:29:37Z'
+            pull_request: true
+        395:
+            html_url: 'https://github.com/bolt/four/issues/395'
+            number: 395
+            title: 'Refactor `Areas` into `FileLocations`, because more descriptive.'
+            user: bobdenotter
+            labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }]
+            state: closed
+            assignee: bobdenotter
+            created_at: '2019-04-13T13:47:51Z'
+            updated_at: '2019-04-13T14:28:14Z'
+            closed_at: '2019-04-13T14:28:13Z'
+            pull_request: false
         389:
             html_url: 'https://github.com/bolt/four/pull/389'
             number: 389
             title: 'Refactor/extract menus, and cache them properly'
             user: bobdenotter
             labels: {  }
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-04-05T13:49:50Z'
-            updated_at: '2019-04-10T07:48:18Z'
-            closed_at: null
+            updated_at: '2019-04-13T11:33:41Z'
+            closed_at: '2019-04-13T11:33:37Z'
             pull_request: true
         382:
             html_url: 'https://github.com/bolt/four/pull/382'
@@ -688,11 +784,11 @@
             title: 'Feature: Widgets and Snippets'
             user: bobdenotter
             labels: {  }
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-04-03T19:33:48Z'
-            updated_at: '2019-04-10T07:48:13Z'
-            closed_at: null
+            updated_at: '2019-04-22T07:16:14Z'
+            closed_at: '2019-04-22T07:16:10Z'
             pull_request: true
         380:
             html_url: 'https://github.com/bolt/four/issues/380'
@@ -700,11 +796,11 @@
             title: 'Use CacheWrapper pattern for Sidebarmenu construction.'
             user: bobdenotter
             labels: {  }
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-04-03T05:26:33Z'
-            updated_at: '2019-04-10T07:45:26Z'
-            closed_at: null
+            updated_at: '2019-04-13T11:33:37Z'
+            closed_at: '2019-04-13T11:33:37Z'
             pull_request: false
         379:
             html_url: 'https://github.com/bolt/four/issues/379'
@@ -712,11 +808,11 @@
             title: 'Improve tests for ''config parsers'''
             user: bobdenotter
             labels: [{ id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-04-03T05:21:12Z'
-            updated_at: '2019-04-03T13:55:38Z'
-            closed_at: null
+            updated_at: '2019-05-08T06:11:20Z'
+            closed_at: '2019-05-08T06:11:20Z'
             pull_request: false
         378:
             html_url: 'https://github.com/bolt/four/pull/378'
@@ -742,6 +838,18 @@
             updated_at: '2019-04-10T07:49:02Z'
             closed_at: '2019-04-05T11:03:32Z'
             pull_request: true
+        371:
+            html_url: 'https://github.com/bolt/four/issues/371'
+            number: 371
+            title: 'Add Unit/PhpSpec tests for Taxonomies'
+            user: bobdenotter
+            labels: [{ id: 1189558539, node_id: MDU6TGFiZWwxMTg5NTU4NTM5, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20tests', name: 'tag: needs tests', color: de72f9, default: false }, { id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }, { id: 1318694246, node_id: MDU6TGFiZWwxMzE4Njk0MjQ2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Taxonomies', name: 'topic: Taxonomies', color: 72c117, default: false }]
+            state: closed
+            assignee: null
+            created_at: '2019-03-28T14:23:07Z'
+            updated_at: '2019-05-08T06:11:20Z'
+            closed_at: '2019-05-08T06:11:20Z'
+            pull_request: false
         364:
             html_url: 'https://github.com/bolt/four/pull/364'
             number: 364
@@ -754,6 +862,42 @@
             updated_at: '2019-04-10T07:49:05Z'
             closed_at: '2019-03-29T15:27:18Z'
             pull_request: true
+        332:
+            html_url: 'https://github.com/bolt/four/pull/332'
+            number: 332
+            title: '[RFC][WIP] Introduce Symfony Forms'
+            user: JarJak
+            labels: {  }
+            state: open
+            assignee: null
+            created_at: '2019-02-22T13:31:05Z'
+            updated_at: '2019-04-28T14:13:25Z'
+            closed_at: null
+            pull_request: true
+        331:
+            html_url: 'https://github.com/bolt/four/issues/331'
+            number: 331
+            title: 'Implement Symfony Forms and Validation in backend'
+            user: JarJak
+            labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }, { id: 1330915990, node_id: MDU6TGFiZWwxMzMwOTE1OTkw, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20form', name: 'topic: form', color: 79e5b1, default: false }]
+            state: open
+            assignee: JarJak
+            created_at: '2019-02-19T21:42:23Z'
+            updated_at: '2019-04-22T21:44:29Z'
+            closed_at: null
+            pull_request: false
+        330:
+            html_url: 'https://github.com/bolt/four/issues/330'
+            number: 330
+            title: 'Relations editor Vue component'
+            user: JarJak
+            labels: [{ id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }, { id: 1101873383, node_id: MDU6TGFiZWwxMTAxODczMzgz, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Vue', name: 'topic: Vue', color: 52B988, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-02-18T11:14:14Z'
+            updated_at: '2019-04-21T23:46:01Z'
+            closed_at: null
+            pull_request: false
         306:
             html_url: 'https://github.com/bolt/four/issues/306'
             number: 306
@@ -784,11 +928,11 @@
             title: 'Make "Dashboard News" work'
             user: JarJak
             labels: {  }
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-01-18T19:01:34Z'
-            updated_at: '2019-01-24T07:40:33Z'
-            closed_at: null
+            updated_at: '2019-04-22T07:16:10Z'
+            closed_at: '2019-04-22T07:16:10Z'
             pull_request: false
         255:
             html_url: 'https://github.com/bolt/four/issues/255'
@@ -813,6 +957,18 @@
             created_at: '2019-01-11T13:07:12Z'
             updated_at: '2019-04-05T11:03:32Z'
             closed_at: '2019-04-05T11:03:32Z'
+            pull_request: false
+        252:
+            html_url: 'https://github.com/bolt/four/issues/252'
+            number: 252
+            title: 'Frontend: Make "Show relations for a record" work'
+            user: bobdenotter
+            labels: [{ id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }]
+            state: closed
+            assignee: null
+            created_at: '2019-01-11T13:06:35Z'
+            updated_at: '2019-05-16T17:50:23Z'
+            closed_at: '2019-05-16T17:50:23Z'
             pull_request: false
         245:
             html_url: 'https://github.com/bolt/four/issues/245'
@@ -874,66 +1030,6 @@
             updated_at: '2019-03-29T15:52:03Z'
             closed_at: '2019-03-29T15:52:03Z'
             pull_request: false
-        135:
-            html_url: 'https://github.com/bolt/four/issues/135'
-            number: 135
-            title: '⭐️ Make "Widgets" and "Snippets" for v4'
-            user: bobdenotter
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
-            state: open
-            assignee: bobdenotter
-            created_at: '2018-11-17T12:18:52Z'
-            updated_at: '2019-04-10T07:25:17Z'
-            closed_at: null
-            pull_request: false
-        131:
-            html_url: 'https://github.com/bolt/four/issues/131'
-            number: 131
-            title: 'Bolt 4.0.0 beta 1 - Tracker Issue'
-            user: bobdenotter
-            labels: [{ id: 1130857950, node_id: MDU6TGFiZWwxMTMwODU3OTUw, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Tracker', name: 'topic: Tracker', color: c16e0f, default: false }]
-            state: closed
-            assignee: bobdenotter
-            created_at: '2018-11-17T11:29:19Z'
-            updated_at: '2018-11-17T12:17:33Z'
-            closed_at: '2018-11-17T12:17:33Z'
-            pull_request: false
-        111:
-            html_url: 'https://github.com/bolt/four/issues/111'
-            number: 111
-            title: 'Add a ''powered by Bolt'' HTTP header'
-            user: bobdenotter
-            labels: [{ id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }, { id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }]
-            state: open
-            assignee: bobdenotter
-            created_at: '2018-11-15T10:04:09Z'
-            updated_at: '2019-04-10T07:25:23Z'
-            closed_at: null
-            pull_request: false
-        47:
-            html_url: 'https://github.com/bolt/four/issues/47'
-            number: 47
-            title: '⭐️  Make all required backend controllers'
-            user: bobdenotter
-            labels: [{ id: 1101873386, node_id: MDU6TGFiZWwxMTAxODczMzg2, url: 'https://api.github.com/repos/bolt/four/labels/status:%20in%20progress', name: 'status: in progress', color: cccccc, default: false }, { id: 1101873366, node_id: MDU6TGFiZWwxMTAxODczMzY2, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20internal', name: 'tag: internal', color: cccccc, default: false }, { id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }]
-            state: closed
-            assignee: bobdenotter
-            created_at: '2018-10-26T15:20:56Z'
-            updated_at: '2019-03-29T15:51:09Z'
-            closed_at: '2019-03-29T15:51:08Z'
-            pull_request: false
-        42:
-            html_url: 'https://github.com/bolt/four/issues/42'
-            number: 42
-            title: '⭐️ Make all required frontend controllers'
-            user: bobdenotter
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }, { id: 1101909520, node_id: MDU6TGFiZWwxMTAxOTA5NTIw, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20splitting', name: 'tag: needs splitting', color: b88eed, default: false }, { id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }, { id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }]
-            state: closed
-            assignee: null
-            created_at: '2018-10-23T19:12:38Z'
-            updated_at: '2019-03-29T15:51:17Z'
-            closed_at: '2019-03-29T15:51:17Z'
-            pull_request: false
 -
     url: 'https://api.github.com/repos/bolt/four/milestones/5'
     html_url: 'https://github.com/bolt/four/milestone/5'
@@ -942,7 +1038,7 @@
     node_id: MDk6TWlsZXN0b25lMzg0OTUzOA==
     number: 5
     title: 'Bolt 4 beta 2'
-    description: "**🔑 Feature: Headless frontend** \r\n\r\n"
+    description: '**🔑 Feature: Headless frontend**'
     creator:
         login: bobdenotter
         id: 1833361
@@ -962,60 +1058,36 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 20
-    closed_issues: 1
+    open_issues: 16
+    closed_issues: 3
     state: open
     created_at: '2018-11-26T19:05:48Z'
-    updated_at: '2019-04-10T07:48:24Z'
-    due_on: '2019-05-01T07:00:00Z'
+    updated_at: '2019-04-26T13:13:41Z'
+    due_on: '2019-06-30T07:00:00Z'
     closed_at: null
     issues:
-        332:
-            html_url: 'https://github.com/bolt/four/pull/332'
-            number: 332
-            title: '[RFC][WIP] Introduce Symfony Forms'
+        396:
+            html_url: 'https://github.com/bolt/four/issues/396'
+            number: 396
+            title: 'Change Areas to FileLocations'
             user: JarJak
-            labels: {  }
-            state: open
-            assignee: null
-            created_at: '2019-02-22T13:31:05Z'
-            updated_at: '2019-04-10T07:48:24Z'
-            closed_at: null
-            pull_request: true
-        331:
-            html_url: 'https://github.com/bolt/four/issues/331'
-            number: 331
-            title: 'Implement Symfony Forms and Validation in backend'
-            user: JarJak
-            labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }]
-            state: open
-            assignee: JarJak
-            created_at: '2019-02-19T21:42:23Z'
-            updated_at: '2019-04-10T07:24:37Z'
-            closed_at: null
-            pull_request: false
-        330:
-            html_url: 'https://github.com/bolt/four/issues/330'
-            number: 330
-            title: 'Relations editor Vue component'
-            user: JarJak
-            labels: {  }
-            state: open
-            assignee: null
-            created_at: '2019-02-18T11:14:14Z'
-            updated_at: '2019-04-10T07:27:18Z'
-            closed_at: null
+            labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20refactor', name: 'tag: refactor', color: 5890d8, default: false }, { id: 1317626861, node_id: MDU6TGFiZWwxMzE3NjI2ODYx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20filesystem', name: 'topic: filesystem', color: a6ff54, default: false }]
+            state: closed
+            assignee: bobdenotter
+            created_at: '2019-04-13T13:49:42Z'
+            updated_at: '2019-04-26T13:13:41Z'
+            closed_at: '2019-04-26T13:13:41Z'
             pull_request: false
         329:
             html_url: 'https://github.com/bolt/four/issues/329'
             number: 329
             title: 'Relations and Taxonomies in Preview mode'
             user: JarJak
-            labels: {  }
+            labels: [{ id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }, { id: 1318694246, node_id: MDU6TGFiZWwxMzE4Njk0MjQ2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Taxonomies', name: 'topic: Taxonomies', color: 72c117, default: false }]
             state: open
             assignee: null
             created_at: '2019-02-18T11:08:42Z'
-            updated_at: '2019-04-10T07:24:27Z'
+            updated_at: '2019-04-14T13:10:49Z'
             closed_at: null
             pull_request: false
         303:
@@ -1042,18 +1114,6 @@
             updated_at: '2019-03-20T17:59:07Z'
             closed_at: null
             pull_request: false
-        252:
-            html_url: 'https://github.com/bolt/four/issues/252'
-            number: 252
-            title: 'Frontend: Make "Show relations for a record" work'
-            user: bobdenotter
-            labels: [{ id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }]
-            state: open
-            assignee: null
-            created_at: '2019-01-11T13:06:35Z'
-            updated_at: '2019-04-10T07:24:09Z'
-            closed_at: null
-            pull_request: false
         249:
             html_url: 'https://github.com/bolt/four/issues/249'
             number: 249
@@ -1076,6 +1136,30 @@
             assignee: jackiboy
             created_at: '2018-12-11T16:25:35Z'
             updated_at: '2019-03-20T17:59:02Z'
+            closed_at: null
+            pull_request: false
+        194:
+            html_url: 'https://github.com/bolt/four/issues/194'
+            number: 194
+            title: 'Make “setcontent" less magical'
+            user: nestordedios
+            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }, { id: 1101873393, node_id: MDU6TGFiZWwxMTAxODczMzkz, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Content', name: 'topic: Content', color: f99e43, default: false }, { id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
+            state: open
+            assignee: null
+            created_at: '2018-11-30T12:30:51Z'
+            updated_at: '2019-04-22T20:55:52Z'
+            closed_at: null
+            pull_request: false
+        183:
+            html_url: 'https://github.com/bolt/four/issues/183'
+            number: 183
+            title: '⭐️  Make good event system'
+            user: nestordedios
+            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
+            state: open
+            assignee: null
+            created_at: '2018-11-30T11:26:56Z'
+            updated_at: '2019-04-22T21:12:35Z'
             closed_at: null
             pull_request: false
         176:
@@ -1132,11 +1216,11 @@
             title: 'Create Content API endpoints for Frontend'
             user: JarJak
             labels: [{ id: 1101909520, node_id: MDU6TGFiZWwxMTAxOTA5NTIw, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20splitting', name: 'tag: needs splitting', color: b88eed, default: false }, { id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2018-11-20T21:26:58Z'
-            updated_at: '2019-03-20T17:54:19Z'
-            closed_at: null
+            updated_at: '2019-04-14T13:07:50Z'
+            closed_at: '2019-04-14T13:07:50Z'
             pull_request: false
         138:
             html_url: 'https://github.com/bolt/four/issues/138'
@@ -1198,18 +1282,6 @@
             updated_at: '2019-03-20T17:53:44Z'
             closed_at: null
             pull_request: false
-        39:
-            html_url: 'https://github.com/bolt/four/issues/39'
-            number: 39
-            title: '🎨  Headless: Make a new `base-2019 headless` theme'
-            user: bobdenotter
-            labels: [{ id: 1101909520, node_id: MDU6TGFiZWwxMTAxOTA5NTIw, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20splitting', name: 'tag: needs splitting', color: b88eed, default: false }, { id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }, { id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }]
-            state: open
-            assignee: null
-            created_at: '2018-10-23T19:11:22Z'
-            updated_at: '2018-11-26T20:27:26Z'
-            closed_at: null
-            pull_request: false
         36:
             html_url: 'https://github.com/bolt/four/issues/36'
             number: 36
@@ -1250,24 +1322,24 @@
         received_events_url: 'https://api.github.com/users/nestordedios/received_events'
         type: User
         site_admin: false
-    open_issues: 17
+    open_issues: 15
     closed_issues: 1
     state: open
     created_at: '2018-11-30T12:44:21Z'
-    updated_at: '2019-04-10T07:27:28Z'
-    due_on: '2019-05-25T07:00:00Z'
+    updated_at: '2019-04-22T21:14:44Z'
+    due_on: '2019-07-31T07:00:00Z'
     closed_at: null
     issues:
-        371:
-            html_url: 'https://github.com/bolt/four/issues/371'
-            number: 371
-            title: 'Add Unit/PhpSpec tests for Taxonomies'
-            user: bobdenotter
-            labels: [{ id: 1189558539, node_id: MDU6TGFiZWwxMTg5NTU4NTM5, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20tests', name: 'tag: needs tests', color: de72f9, default: false }, { id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
+        403:
+            html_url: 'https://github.com/bolt/four/issues/403'
+            number: 403
+            title: 'Make Taxonomies API endpoints'
+            user: JarJak
+            labels: [{ id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }, { id: 1318694246, node_id: MDU6TGFiZWwxMzE4Njk0MjQ2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Taxonomies', name: 'topic: Taxonomies', color: 72c117, default: false }]
             state: open
             assignee: null
-            created_at: '2019-03-28T14:23:07Z'
-            updated_at: '2019-04-10T07:27:28Z'
+            created_at: '2019-04-14T13:09:01Z'
+            updated_at: '2019-04-14T15:05:16Z'
             closed_at: null
             pull_request: false
         370:
@@ -1287,11 +1359,23 @@
             number: 339
             title: 'Allow extensions to define own field types'
             user: JarJak
-            labels: [{ id: 1101873375, node_id: MDU6TGFiZWwxMTAxODczMzc1, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Extensions', name: 'topic: Extensions', color: fbca04, default: false }]
+            labels: [{ id: 1101873375, node_id: MDU6TGFiZWwxMTAxODczMzc1, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Extensions', name: 'topic: Extensions', color: fbca04, default: false }, { id: 1330915990, node_id: MDU6TGFiZWwxMzMwOTE1OTkw, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20form', name: 'topic: form', color: 79e5b1, default: false }]
             state: open
             assignee: null
             created_at: '2019-02-28T09:28:36Z'
-            updated_at: '2019-03-20T18:00:37Z'
+            updated_at: '2019-04-23T06:49:36Z'
+            closed_at: null
+            pull_request: false
+        334:
+            html_url: 'https://github.com/bolt/four/issues/334'
+            number: 334
+            title: 'Update .env files config'
+            user: JarJak
+            labels: [{ id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-02-22T14:15:12Z'
+            updated_at: '2019-04-21T14:41:24Z'
             closed_at: null
             pull_request: false
         328:
@@ -1299,11 +1383,11 @@
             number: 328
             title: 'Relations API Endpoints'
             user: JarJak
-            labels: {  }
+            labels: [{ id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }]
             state: open
             assignee: null
             created_at: '2019-02-18T11:01:42Z'
-            updated_at: '2019-04-10T07:24:22Z'
+            updated_at: '2019-04-14T13:11:02Z'
             closed_at: null
             pull_request: false
         326:
@@ -1311,11 +1395,11 @@
             number: 326
             title: 'Add Relations examples to skeleton theme'
             user: JarJak
-            labels: {  }
+            labels: [{ id: 1101873379, node_id: MDU6TGFiZWwxMTAxODczMzc5, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Base-2019%20traditional', name: 'topic: Base-2019 traditional', color: 37d37d, default: false }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }]
             state: open
             assignee: null
             created_at: '2019-02-18T10:57:30Z'
-            updated_at: '2019-02-18T10:57:30Z'
+            updated_at: '2019-04-28T13:36:52Z'
             closed_at: null
             pull_request: false
         319:
@@ -1387,43 +1471,7 @@
             state: open
             assignee: null
             created_at: '2018-11-30T12:38:28Z'
-            updated_at: '2018-12-01T10:22:10Z'
-            closed_at: null
-            pull_request: false
-        194:
-            html_url: 'https://github.com/bolt/four/issues/194'
-            number: 194
-            title: 'Make “setcontent" less magical'
-            user: nestordedios
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }, { id: 1101873393, node_id: MDU6TGFiZWwxMTAxODczMzkz, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Content', name: 'topic: Content', color: f99e43, default: false }, { id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
-            state: open
-            assignee: null
-            created_at: '2018-11-30T12:30:51Z'
-            updated_at: '2019-04-10T07:23:54Z'
-            closed_at: null
-            pull_request: false
-        183:
-            html_url: 'https://github.com/bolt/four/issues/183'
-            number: 183
-            title: '⭐️  Make good event system'
-            user: nestordedios
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
-            state: open
-            assignee: null
-            created_at: '2018-11-30T11:26:56Z'
-            updated_at: '2019-03-20T18:01:08Z'
-            closed_at: null
-            pull_request: false
-        163:
-            html_url: 'https://github.com/bolt/four/issues/163'
-            number: 163
-            title: '⭐️ Make "Relations" work'
-            user: bobdenotter
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
-            state: open
-            assignee: JarJak
-            created_at: '2018-11-26T20:08:04Z'
-            updated_at: '2019-04-10T07:26:49Z'
+            updated_at: '2019-04-13T14:08:19Z'
             closed_at: null
             pull_request: false
         162:
@@ -1506,8 +1554,8 @@
     closed_issues: 0
     state: open
     created_at: '2018-11-26T19:06:39Z'
-    updated_at: '2019-04-10T07:26:41Z'
-    due_on: '2019-06-15T07:00:00Z'
+    updated_at: '2019-04-22T21:14:54Z'
+    due_on: '2019-09-30T07:00:00Z'
     closed_at: null
     issues:
         327:
@@ -1515,11 +1563,11 @@
             number: 327
             title: 'Documentation for Relations'
             user: JarJak
-            labels: {  }
+            labels: [{ id: 1101873374, node_id: MDU6TGFiZWwxMTAxODczMzc0, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20documentation', name: 'tag: documentation', color: cc317c, default: false }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }]
             state: open
             assignee: null
             created_at: '2019-02-18T10:59:20Z'
-            updated_at: '2019-02-18T10:59:20Z'
+            updated_at: '2019-04-28T13:36:18Z'
             closed_at: null
             pull_request: false
         318:
@@ -1527,11 +1575,11 @@
             number: 318
             title: 'Unexpected "media" and other keys in Image field value'
             user: JarJak
-            labels: {  }
+            labels: [{ id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }, { id: 1101873369, node_id: MDU6TGFiZWwxMTAxODczMzY5, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Media', name: 'topic: Media', color: 84b6eb, default: false }]
             state: open
             assignee: null
             created_at: '2019-02-07T22:28:48Z'
-            updated_at: '2019-04-03T13:57:04Z'
+            updated_at: '2019-04-14T13:15:57Z'
             closed_at: null
             pull_request: false
         266:
@@ -1598,14 +1646,38 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 1
+    open_issues: 4
     closed_issues: 0
     state: open
     created_at: '2018-11-26T20:12:29Z'
-    updated_at: '2019-03-20T17:56:17Z'
-    due_on: '2019-07-17T07:00:00Z'
+    updated_at: '2019-04-22T22:00:28Z'
+    due_on: '2019-11-01T07:00:00Z'
     closed_at: null
     issues:
+        415:
+            html_url: 'https://github.com/bolt/four/issues/415'
+            number: 415
+            title: 'Make Task Scheduler (cron)'
+            user: JarJak
+            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-04-22T22:00:28Z'
+            updated_at: '2019-04-23T06:15:33Z'
+            closed_at: null
+            pull_request: false
+        408:
+            html_url: 'https://github.com/bolt/four/issues/408'
+            number: 408
+            title: 'Create widgetbuilder for widgets and snippets'
+            user: bobdenotter
+            labels: [{ id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
+            state: open
+            assignee: null
+            created_at: '2019-04-19T16:43:18Z'
+            updated_at: '2019-04-23T21:19:41Z'
+            closed_at: null
+            pull_request: false
         165:
             html_url: 'https://github.com/bolt/four/issues/165'
             number: 165
@@ -1616,6 +1688,18 @@
             assignee: null
             created_at: '2018-11-26T20:13:21Z'
             updated_at: '2018-12-01T10:26:16Z'
+            closed_at: null
+            pull_request: false
+        39:
+            html_url: 'https://github.com/bolt/four/issues/39'
+            number: 39
+            title: '🎨  Headless: Make a new `base-2019 headless` theme'
+            user: bobdenotter
+            labels: [{ id: 1101909520, node_id: MDU6TGFiZWwxMTAxOTA5NTIw, url: 'https://api.github.com/repos/bolt/four/labels/tag:%20needs%20splitting', name: 'tag: needs splitting', color: b88eed, default: false }, { id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20API', name: 'topic: API', color: b28133, default: false }, { id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }]
+            state: open
+            assignee: null
+            created_at: '2018-10-23T19:11:22Z'
+            updated_at: '2019-04-14T14:57:54Z'
             closed_at: null
             pull_request: false
 -
@@ -1650,8 +1734,8 @@
     closed_issues: 1
     state: open
     created_at: '2018-11-26T20:10:12Z'
-    updated_at: '2019-02-07T23:11:44Z'
-    due_on: '2019-08-19T07:00:00Z'
+    updated_at: '2019-04-22T21:16:10Z'
+    due_on: '2020-01-01T08:00:00Z'
     closed_at: null
     issues:
         158:
@@ -1686,7 +1770,7 @@
     node_id: MDk6TWlsZXN0b25lMzg2MTEyNw==
     number: 14
     title: 'Bolt 4.3 stable'
-    description: "**🔑 Key feature: Headless backend**\r\n"
+    description: '**🔑 Key feature: Headless backend**'
     creator:
         login: nestordedios
         id: 6607455
@@ -1710,8 +1794,8 @@
     closed_issues: 0
     state: open
     created_at: '2018-11-30T12:58:41Z'
-    updated_at: '2018-12-02T13:15:27Z'
-    due_on: '2019-10-14T07:00:00Z'
+    updated_at: '2019-04-22T21:17:27Z'
+    due_on: '2020-03-01T08:00:00Z'
     closed_at: null
     issues:
         200:
@@ -1746,7 +1830,7 @@
     node_id: MDk6TWlsZXN0b25lMzg2MTEzMg==
     number: 15
     title: 'Bolt 4.4 stable'
-    description: "**🔑 Feature: Community**\r\n\r\n - Frontend users\r\n - User profiles\r\n - Comment system\r\n - Comments moderation\r\n"
+    description: "**🔑 Feature: Community**\r\n\r\n - Frontend users\r\n - User profiles\r\n - Comment system\r\n - Comments moderation"
     creator:
         login: nestordedios
         id: 6607455
@@ -1770,8 +1854,8 @@
     closed_issues: 0
     state: open
     created_at: '2018-11-30T13:02:00Z'
-    updated_at: '2018-12-02T13:19:07Z'
-    due_on: '2019-12-16T08:00:00Z'
+    updated_at: '2019-04-22T21:17:57Z'
+    due_on: '2020-05-01T07:00:00Z'
     closed_at: null
     issues:
         204:
