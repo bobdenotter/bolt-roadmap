@@ -662,25 +662,49 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 8
-    closed_issues: 28
+    open_issues: 3
+    closed_issues: 35
     state: open
     created_at: '2018-11-17T11:30:34Z'
-    updated_at: '2019-05-16T17:50:23Z'
+    updated_at: '2019-05-27T17:40:58Z'
     due_on: '2019-05-31T07:00:00Z'
     closed_at: null
     issues:
+        433:
+            html_url: 'https://github.com/bolt/four/pull/433'
+            number: 433
+            title: 'Add Controllers for ''duplicate'', ''change status'' and ''delete'''
+            user: bobdenotter
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2019-05-26T11:00:34Z'
+            updated_at: '2019-05-27T17:40:17Z'
+            closed_at: '2019-05-27T17:40:12Z'
+            pull_request: true
+        432:
+            html_url: 'https://github.com/bolt/four/pull/432'
+            number: 432
+            title: 'Editing relations, attempt 2'
+            user: bobdenotter
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2019-05-22T15:28:06Z'
+            updated_at: '2019-05-27T17:41:01Z'
+            closed_at: '2019-05-27T17:40:58Z'
+            pull_request: true
         426:
             html_url: 'https://github.com/bolt/four/issues/426'
             number: 426
             title: 'Make "Change Content status" controller'
             user: bobdenotter
             labels: [{ id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-05-12T10:46:01Z'
-            updated_at: '2019-05-12T10:46:01Z'
-            closed_at: null
+            updated_at: '2019-05-27T17:40:12Z'
+            closed_at: '2019-05-27T17:40:12Z'
             pull_request: false
         425:
             html_url: 'https://github.com/bolt/four/issues/425'
@@ -688,11 +712,11 @@
             title: 'Make "Delete Content" controller'
             user: bobdenotter
             labels: [{ id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-05-12T10:45:30Z'
-            updated_at: '2019-05-12T10:45:30Z'
-            closed_at: null
+            updated_at: '2019-05-27T17:40:12Z'
+            closed_at: '2019-05-27T17:40:12Z'
             pull_request: false
         424:
             html_url: 'https://github.com/bolt/four/issues/424'
@@ -700,11 +724,11 @@
             title: 'Make "Duplicate Content" controller'
             user: bobdenotter
             labels: [{ id: 1101902218, node_id: MDU6TGFiZWwxMTAxOTAyMjE4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Controllers', name: 'topic: Controllers', color: e99695, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-05-12T10:45:06Z'
-            updated_at: '2019-05-12T10:45:06Z'
-            closed_at: null
+            updated_at: '2019-05-27T17:40:12Z'
+            closed_at: '2019-05-27T17:40:12Z'
             pull_request: false
         421:
             html_url: 'https://github.com/bolt/four/pull/421'
@@ -724,11 +748,11 @@
             title: '[WIP] Editing relations'
             user: bobdenotter
             labels: {  }
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-05-07T19:30:02Z'
-            updated_at: '2019-05-22T12:08:50Z'
-            closed_at: null
+            updated_at: '2019-05-27T17:40:58Z'
+            closed_at: '2019-05-27T17:40:58Z'
             pull_request: true
         407:
             html_url: 'https://github.com/bolt/four/issues/407'
@@ -892,11 +916,11 @@
             title: 'Relations editor Vue component'
             user: JarJak
             labels: [{ id: 1101873387, node_id: MDU6TGFiZWwxMTAxODczMzg3, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Frontend', name: 'topic: Frontend', color: eb6420, default: false }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }, { id: 1101873383, node_id: MDU6TGFiZWwxMTAxODczMzgz, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Vue', name: 'topic: Vue', color: 52B988, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-02-18T11:14:14Z'
-            updated_at: '2019-04-21T23:46:01Z'
-            closed_at: null
+            updated_at: '2019-05-27T17:40:57Z'
+            closed_at: '2019-05-27T17:40:57Z'
             pull_request: false
         306:
             html_url: 'https://github.com/bolt/four/issues/306'
@@ -1006,30 +1030,6 @@
             updated_at: '2019-02-26T21:59:41Z'
             closed_at: '2019-02-26T21:59:41Z'
             pull_request: false
-        190:
-            html_url: 'https://github.com/bolt/four/issues/190'
-            number: 190
-            title: 'Prebuilt docker image / with docker-compose.yml'
-            user: nestordedios
-            labels: [{ id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
-            state: closed
-            assignee: null
-            created_at: '2018-11-30T12:19:11Z'
-            updated_at: '2019-01-21T22:51:21Z'
-            closed_at: '2019-01-21T22:51:21Z'
-            pull_request: false
-        166:
-            html_url: 'https://github.com/bolt/four/issues/166'
-            number: 166
-            title: '⭐️ Make `composer create-project` installable'
-            user: bobdenotter
-            labels: [{ id: 1130870126, node_id: MDU6TGFiZWwxMTMwODcwMTI2, url: 'https://api.github.com/repos/bolt/four/labels/Epic', name: Epic, color: 3E4B9E, default: false }, { id: 1146593968, node_id: MDU6TGFiZWwxMTQ2NTkzOTY4, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20DX', name: 'topic: DX', color: c5def5, default: false }]
-            state: closed
-            assignee: null
-            created_at: '2018-11-26T20:24:09Z'
-            updated_at: '2019-03-29T15:52:03Z'
-            closed_at: '2019-03-29T15:52:03Z'
-            pull_request: false
 -
     url: 'https://api.github.com/repos/bolt/four/milestones/5'
     html_url: 'https://github.com/bolt/four/milestone/5'
@@ -1058,11 +1058,11 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 16
-    closed_issues: 3
+    open_issues: 15
+    closed_issues: 4
     state: open
     created_at: '2018-11-26T19:05:48Z'
-    updated_at: '2019-04-26T13:13:41Z'
+    updated_at: '2019-05-27T17:40:58Z'
     due_on: '2019-06-30T07:00:00Z'
     closed_at: null
     issues:
@@ -1084,11 +1084,11 @@
             title: 'Relations and Taxonomies in Preview mode'
             user: JarJak
             labels: [{ id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false }, { id: 1318694246, node_id: MDU6TGFiZWwxMzE4Njk0MjQ2, url: 'https://api.github.com/repos/bolt/four/labels/topic:%20Taxonomies', name: 'topic: Taxonomies', color: 72c117, default: false }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-02-18T11:08:42Z'
-            updated_at: '2019-04-14T13:10:49Z'
-            closed_at: null
+            updated_at: '2019-05-27T17:40:58Z'
+            closed_at: '2019-05-27T17:40:58Z'
             pull_request: false
         303:
             html_url: 'https://github.com/bolt/four/pull/303'
