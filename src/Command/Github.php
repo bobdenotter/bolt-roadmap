@@ -74,7 +74,7 @@ HELP
             $tempissues = collect($this->client->api('issue')->all(
                 $config['org'],
                 $config['repository'],
-                ['milestone' => $milestone['number'], 'state' => 'all']
+                ['milestone' => $milestone['number'], 'state' => 'all', 'per_page' => 100]
             ));
 
             $output->writeln(
