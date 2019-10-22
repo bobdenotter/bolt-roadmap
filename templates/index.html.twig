@@ -6,7 +6,7 @@
 
 <ul class="timeline">
 
-    {% for milestone in data if milestone.state == "open" %}
+    {% for milestone in data|sort((a, b) => a.due_on <=> b.due_on) if milestone.state == "open" %}
         {% include 'milestone.html.twig' %}
     {% endfor %}
 
