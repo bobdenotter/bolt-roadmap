@@ -3158,25 +3158,49 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 11
-    closed_issues: 81
+    open_issues: 9
+    closed_issues: 85
     state: open
     created_at: '2018-11-26T19:06:39Z'
-    updated_at: '2020-03-14T13:58:55Z'
+    updated_at: '2020-03-15T15:49:25Z'
     due_on: '2020-04-04T07:00:00Z'
     closed_at: null
     issues:
+        1186:
+            html_url: 'https://github.com/bolt/core/pull/1186'
+            number: 1186
+            title: 'Make ordering in `{% setcontent %}` more robust'
+            user: bobdenotter
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2020-03-15T14:48:26Z'
+            updated_at: '2020-03-15T15:49:30Z'
+            closed_at: '2020-03-15T15:49:25Z'
+            pull_request: true
+        1185:
+            html_url: 'https://github.com/bolt/core/pull/1185'
+            number: 1185
+            title: 'Refactored thumbnails. Much more efficient now. '
+            user: bobdenotter
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2020-03-15T07:58:29Z'
+            updated_at: '2020-03-15T13:27:49Z'
+            closed_at: '2020-03-15T13:27:28Z'
+            pull_request: true
         1184:
             html_url: 'https://github.com/bolt/core/issues/1184'
             number: 1184
             title: 'Add ''save_files'' feature for thumbnails'
             user: bobdenotter
             labels: [{ id: 1188176230, node_id: MDU6TGFiZWwxMTg4MTc2MjMw, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20performance', name: 'topic: performance', color: f48e89, default: false, description: '' }, { id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%8E%A9%20refactor', name: '🎩 refactor', color: 5890d8, default: false, description: '' }]
-            state: open
+            state: closed
             assignee: bobdenotter
             created_at: '2020-03-14T13:58:55Z'
-            updated_at: '2020-03-14T13:58:55Z'
-            closed_at: null
+            updated_at: '2020-03-15T13:27:28Z'
+            closed_at: '2020-03-15T13:27:28Z'
             pull_request: false
         1183:
             html_url: 'https://github.com/bolt/core/pull/1183'
@@ -3196,11 +3220,11 @@
             title: 'Update Sirius Uploader, get rid of raw `$_FILES`'
             user: bobdenotter
             labels: {  }
-            state: open
+            state: closed
             assignee: null
             created_at: '2020-03-14T10:48:56Z'
-            updated_at: '2020-03-14T10:52:43Z'
-            closed_at: null
+            updated_at: '2020-03-15T08:41:25Z'
+            closed_at: '2020-03-15T08:41:21Z'
             pull_request: true
         1179:
             html_url: 'https://github.com/bolt/core/pull/1179'

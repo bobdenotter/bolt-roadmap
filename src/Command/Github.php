@@ -6,17 +6,12 @@ namespace App\Command;
 
 use App\Config\Configuration;
 use App\Entity\Statistics;
-use Carbon\Carbon;
-use Cocur\Slugify\Slugify;
-use Doctrine\Common\Persistence\ObjectManager;
+use Doctrine\ORM\EntityManagerInterface;
 use Github\Client;
-use Github\Exception\ApiLimitExceedException;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Helper\ProgressBar;
 use Symfony\Component\Console\Input\InputInterface;
-use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
-use Symfony\Component\Console\Style\SymfonyStyle;
 
 class Github extends Command
 {
@@ -28,10 +23,10 @@ class Github extends Command
     /** @var Client */
     private $client;
 
-    /** @var ObjectManager */
+    /** @var EntityManagerInterface */
     private $objectManager;
 
-    public function __construct(Configuration $configuration, ObjectManager $objectManager, Client $client)
+    public function __construct(Configuration $configuration, EntityManagerInterface $objectManager, Client $client)
     {
         parent::__construct();
         $this->configuration = $configuration;
