@@ -66,11 +66,20 @@ HELP
         $progressBar = new ProgressBar($output, count($milestones));
 
         foreach ($milestones as $key => $milestone) {
-            $tempissues = collect($this->client->api('issue')->all(
-                $config['org'],
-                $config['repository'],
-                ['milestone' => $milestone['number'], 'state' => 'all', 'per_page' => 100]
-            ));
+
+            $page = 1;
+            $pagesize = 100;
+            $tempissues = collect([]);
+
+            while ($pagesize == 100) {
+                $thispage = $this->client->api('issue')->all(
+                    $config['org'],
+                    $config['repository'],
+                    ['milestone' => $milestone['number'], 'state' => 'all', 'per_page' => 100, 'page' => $page++]
+                );
+                $pagesize = count($thispage);
+                $tempissues = $tempissues->merge($thispage);
+            }
 
             $output->writeln(
                 'Milestone: ' . $milestone['title'] . "\n",
@@ -80,7 +89,6 @@ HELP
             $milestones[$key]['issues'] = [];
 
             foreach($tempissues as $issue) {
-
                 $issue['assignee'] = $issue['assignee'] ? $issue['assignee']['login'] : null;
                 $issue['user'] = $issue['user'] ? $issue['user']['login'] : null;
 
@@ -90,8 +98,8 @@ HELP
                     ->only(['html_url', 'number', 'title', 'user', 'assignee', 'labels', 'state', 'created_at', 'updated_at', 'closed_at', 'pull_request'])
                     ->all();
             }
-            $progressBar->advance();
 
+            $progressBar->advance();
         }
 
         $this->configuration->set($milestones);

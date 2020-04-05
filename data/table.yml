@@ -3158,14 +3158,314 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 9
-    closed_issues: 85
+    open_issues: 5
+    closed_issues: 113
     state: open
     created_at: '2018-11-26T19:06:39Z'
-    updated_at: '2020-03-15T15:49:25Z'
-    due_on: '2020-04-04T07:00:00Z'
+    updated_at: '2020-04-04T17:18:31Z'
+    due_on: '2020-04-18T07:00:00Z'
     closed_at: null
     issues:
+        1275:
+            html_url: 'https://github.com/bolt/core/pull/1275'
+            number: 1275
+            title: 'Move the check for JSON to Doctrine/Version class'
+            user: bobdenotter
+            labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%8E%A9%20refactor', name: '🎩 refactor', color: 5890d8, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-04-04T10:23:25Z'
+            updated_at: '2020-04-04T11:15:40Z'
+            closed_at: '2020-04-04T11:15:36Z'
+            pull_request: true
+        1273:
+            html_url: 'https://github.com/bolt/core/issues/1273'
+            number: 1273
+            title: 'When `APP_ENV=prod`, the menu in the backend caches too much'
+            user: bobdenotter
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: null
+            created_at: '2020-04-03T15:10:59Z'
+            updated_at: '2020-04-04T17:18:31Z'
+            closed_at: '2020-04-04T17:18:31Z'
+            pull_request: false
+        1263:
+            html_url: 'https://github.com/bolt/core/pull/1263'
+            number: 1263
+            title: 'Don''t "save" on preview'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-04-01T17:47:41Z'
+            updated_at: '2020-04-02T07:55:10Z'
+            closed_at: '2020-04-02T07:55:03Z'
+            pull_request: true
+        1262:
+            html_url: 'https://github.com/bolt/core/issues/1262'
+            number: 1262
+            title: 'It seems like "preview" also "saves" a record '
+            user: bobdenotter
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: null
+            created_at: '2020-04-01T15:35:53Z'
+            updated_at: '2020-04-02T07:55:03Z'
+            closed_at: '2020-04-02T07:55:03Z'
+            pull_request: false
+        1261:
+            html_url: 'https://github.com/bolt/core/pull/1261'
+            number: 1261
+            title: 'Update to knplabs/doctrine-behaviors 2.0.3'
+            user: bobdenotter
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2020-04-01T15:28:22Z'
+            updated_at: '2020-04-01T17:19:10Z'
+            closed_at: '2020-04-01T17:13:58Z'
+            pull_request: true
+        1246:
+            html_url: 'https://github.com/bolt/core/pull/1246'
+            number: 1246
+            title: 'Fix issue with localized value in other locales removed from collection'
+            user: I-Valchev
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-30T13:09:45Z'
+            updated_at: '2020-03-30T18:51:49Z'
+            closed_at: '2020-03-30T18:51:31Z'
+            pull_request: true
+        1238:
+            html_url: 'https://github.com/bolt/core/pull/1238'
+            number: 1238
+            title: 'Allow `where` filtering on taxonomies in `setcontent`'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-29T10:31:13Z'
+            updated_at: '2020-03-29T11:05:17Z'
+            closed_at: '2020-03-29T11:05:04Z'
+            pull_request: true
+        1237:
+            html_url: 'https://github.com/bolt/core/pull/1237'
+            number: 1237
+            title: 'Ensure we have ''slug'' in API and ''getValues'', even if none is set in contenttype.'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-28T14:20:13Z'
+            updated_at: '2020-03-28T15:51:18Z'
+            closed_at: '2020-03-28T15:50:28Z'
+            pull_request: true
+        1236:
+            html_url: 'https://github.com/bolt/core/pull/1236'
+            number: 1236
+            title: 'Image URL uses canonical config setting and take imagelist into account for the magic image'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-28T13:42:45Z'
+            updated_at: '2020-03-28T14:02:01Z'
+            closed_at: '2020-03-28T14:01:57Z'
+            pull_request: true
+        1234:
+            html_url: 'https://github.com/bolt/core/pull/1234'
+            number: 1234
+            title: 'Allow for taxonomy listings with singular Taxonomy Type slug'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-28T12:29:15Z'
+            updated_at: '2020-03-28T13:43:25Z'
+            closed_at: '2020-03-28T13:43:21Z'
+            pull_request: true
+        1233:
+            html_url: 'https://github.com/bolt/core/pull/1233'
+            number: 1233
+            title: 'Don''t break when trying to save a file that''s not writable'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-28T11:43:24Z'
+            updated_at: '2020-03-28T12:35:34Z'
+            closed_at: '2020-03-28T12:35:30Z'
+            pull_request: true
+        1232:
+            html_url: 'https://github.com/bolt/core/pull/1232'
+            number: 1232
+            title: 'Make `required` work as expected.'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: bobdenotter
+            created_at: '2020-03-27T15:11:32Z'
+            updated_at: '2020-03-29T11:05:16Z'
+            closed_at: '2020-03-28T15:50:36Z'
+            pull_request: true
+        1225:
+            html_url: 'https://github.com/bolt/core/pull/1225'
+            number: 1225
+            title: 'Use compose value in Relations'
+            user: I-Valchev
+            labels: {  }
+            state: closed
+            assignee: null
+            created_at: '2020-03-25T16:24:50Z'
+            updated_at: '2020-03-25T17:39:38Z'
+            closed_at: '2020-03-25T17:39:30Z'
+            pull_request: true
+        1224:
+            html_url: 'https://github.com/bolt/core/pull/1224'
+            number: 1224
+            title: 'User validation'
+            user: versh23
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-25T15:10:08Z'
+            updated_at: '2020-03-28T12:45:59Z'
+            closed_at: '2020-03-27T08:30:05Z'
+            pull_request: true
+        1221:
+            html_url: 'https://github.com/bolt/core/issues/1221'
+            number: 1221
+            title: 'The ''image'' magic attribute should also look into imagelists.'
+            user: bobdenotter
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: I-Valchev
+            created_at: '2020-03-25T06:53:43Z'
+            updated_at: '2020-03-28T14:01:57Z'
+            closed_at: '2020-03-28T14:01:57Z'
+            pull_request: false
+        1220:
+            html_url: 'https://github.com/bolt/core/issues/1220'
+            number: 1220
+            title: '`500` is thrown when trying to add user in backend with an e-mail that''s already in use. '
+            user: bobdenotter
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-24T19:36:10Z'
+            updated_at: '2020-03-28T12:45:41Z'
+            closed_at: '2020-03-28T12:45:40Z'
+            pull_request: false
+        1219:
+            html_url: 'https://github.com/bolt/core/issues/1219'
+            number: 1219
+            title: 'Backend: Content added with prefix value shown inline'
+            user: peterboorsma
+            labels: [{ id: 1406210378, node_id: MDU6TGFiZWwxNDA2MjEwMzc4, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20%F0%9F%8E%A8%20design', name: 'topic: 🎨 design', color: bdffc3, default: false, description: '' }, { id: 1304524877, node_id: MDU6TGFiZWwxMzA0NTI0ODc3, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%8D%8F%20low%20hanging%20fruit', name: '🍏 low hanging fruit', color: f4ea89, default: false, description: '' }, { id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-24T17:51:44Z'
+            updated_at: '2020-03-28T14:11:42Z'
+            closed_at: '2020-03-28T14:11:42Z'
+            pull_request: false
+        1214:
+            html_url: 'https://github.com/bolt/core/issues/1214'
+            number: 1214
+            title: 'Unable to unselect a "grouping" or "category" taxonomy'
+            user: technicallyerik
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-23T03:26:28Z'
+            updated_at: '2020-03-28T15:50:36Z'
+            closed_at: '2020-03-28T15:50:36Z'
+            pull_request: false
+        1212:
+            html_url: 'https://github.com/bolt/core/pull/1212'
+            number: 1212
+            title: 'Don''t fill placeholders for ImageField if filename is not set.'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-21T11:27:47Z'
+            updated_at: '2020-03-21T13:03:36Z'
+            closed_at: '2020-03-21T13:03:21Z'
+            pull_request: true
+        1211:
+            html_url: 'https://github.com/bolt/core/pull/1211'
+            number: 1211
+            title: 'Don''t show slugs for contenttypes without slugs'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-21T10:59:18Z'
+            updated_at: '2020-03-21T13:19:13Z'
+            closed_at: '2020-03-21T13:19:09Z'
+            pull_request: true
+        1210:
+            html_url: 'https://github.com/bolt/core/pull/1210'
+            number: 1210
+            title: 'Make `show_in_menu` work as expected'
+            user: bobdenotter
+            labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-21T10:02:38Z'
+            updated_at: '2020-03-21T13:04:48Z'
+            closed_at: '2020-03-21T13:04:41Z'
+            pull_request: true
+        1209:
+            html_url: 'https://github.com/bolt/core/pull/1209'
+            number: 1209
+            title: 'Fix/show on dashboard'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-20T05:48:10Z'
+            updated_at: '2020-03-21T08:53:17Z'
+            closed_at: '2020-03-20T06:17:11Z'
+            pull_request: true
+        1208:
+            html_url: 'https://github.com/bolt/core/pull/1208'
+            number: 1208
+            title: 'Only search in contenttypes that have `searchable: true`'
+            user: bobdenotter
+            labels: [{ id: 1101873391, node_id: MDU6TGFiZWwxMTAxODczMzkx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug%20fix', name: '🐛 tag: bug fix', color: fbca04, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-20T05:41:20Z'
+            updated_at: '2020-03-20T06:23:51Z'
+            closed_at: '2020-03-20T06:23:23Z'
+            pull_request: true
+        1198:
+            html_url: 'https://github.com/bolt/core/issues/1198'
+            number: 1198
+            title: 'Refactor `sort:` in `type: select` to be `order:`'
+            user: bobdenotter
+            labels: [{ id: 1101873363, node_id: MDU6TGFiZWwxMTAxODczMzYz, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%8E%A9%20refactor', name: '🎩 refactor', color: 5890d8, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-18T15:29:08Z'
+            updated_at: '2020-03-19T18:15:06Z'
+            closed_at: '2020-03-19T18:15:05Z'
+            pull_request: false
+        1196:
+            html_url: 'https://github.com/bolt/core/pull/1196'
+            number: 1196
+            title: 'Set permissions on created files correctly (as configured)'
+            user: bobdenotter
+            labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-03-18T05:48:39Z'
+            updated_at: '2020-03-18T16:34:22Z'
+            closed_at: '2020-03-18T16:30:08Z'
+            pull_request: true
         1186:
             html_url: 'https://github.com/bolt/core/pull/1186'
             number: 1186
@@ -3436,11 +3736,11 @@
             title: 'Make Logger also log the ID of content'
             user: bobdenotter
             labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
-            state: open
+            state: closed
             assignee: bobdenotter
             created_at: '2020-02-18T21:21:36Z'
-            updated_at: '2020-02-18T21:21:36Z'
-            closed_at: null
+            updated_at: '2020-04-04T17:18:30Z'
+            closed_at: '2020-04-04T17:18:30Z'
             pull_request: false
         1090:
             html_url: 'https://github.com/bolt/core/pull/1090'
@@ -3550,6 +3850,18 @@
             updated_at: '2020-02-12T17:06:15Z'
             closed_at: '2020-02-12T17:06:11Z'
             pull_request: true
+        1055:
+            html_url: 'https://github.com/bolt/core/issues/1055'
+            number: 1055
+            title: 'Update docs: how2 use collection with same functionality as repeater'
+            user: surips
+            labels: [{ id: 1101873374, node_id: MDU6TGFiZWwxMTAxODczMzc0, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%93%99%20tag:%20documentation', name: '📙 tag: documentation', color: cc317c, default: false, description: '' }]
+            state: open
+            assignee: null
+            created_at: '2020-02-11T15:46:57Z'
+            updated_at: '2020-03-25T13:13:37Z'
+            closed_at: null
+            pull_request: false
         1054:
             html_url: 'https://github.com/bolt/core/pull/1054'
             number: 1054
@@ -3862,30 +4174,6 @@
             updated_at: '2020-02-03T13:51:17Z'
             closed_at: '2020-02-03T13:51:17Z'
             pull_request: false
-        947:
-            html_url: 'https://github.com/bolt/core/issues/947'
-            number: 947
-            title: 'Support showinfo() twig function'
-            user: I-Valchev
-            labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
-            state: open
-            assignee: null
-            created_at: '2020-01-28T13:55:56Z'
-            updated_at: '2020-01-29T15:03:29Z'
-            closed_at: null
-            pull_request: false
-        946:
-            html_url: 'https://github.com/bolt/core/issues/946'
-            number: 946
-            title: 'Support collapsible option for collections'
-            user: I-Valchev
-            labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
-            state: open
-            assignee: null
-            created_at: '2020-01-28T12:58:15Z'
-            updated_at: '2020-01-29T15:03:33Z'
-            closed_at: null
-            pull_request: false
         945:
             html_url: 'https://github.com/bolt/core/issues/945'
             number: 945
@@ -3952,11 +4240,11 @@
             title: 'Support image and file upload option'
             user: I-Valchev
             labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2020-01-28T11:20:30Z'
-            updated_at: '2020-02-24T14:17:28Z'
-            closed_at: null
+            updated_at: '2020-04-04T11:52:12Z'
+            closed_at: '2020-04-04T11:52:12Z'
             pull_request: false
         938:
             html_url: 'https://github.com/bolt/core/issues/938'
@@ -3964,11 +4252,11 @@
             title: 'Support html fieldtype options'
             user: I-Valchev
             labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2020-01-28T11:15:44Z'
-            updated_at: '2020-01-28T11:15:44Z'
-            closed_at: null
+            updated_at: '2020-04-04T11:51:17Z'
+            closed_at: '2020-04-04T11:51:17Z'
             pull_request: false
         937:
             html_url: 'https://github.com/bolt/core/issues/937'
@@ -4322,14 +4610,50 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 9
-    closed_issues: 2
+    open_issues: 13
+    closed_issues: 3
     state: open
     created_at: '2018-11-26T20:12:29Z'
-    updated_at: '2020-03-14T11:42:48Z'
-    due_on: '2020-06-27T07:00:00Z'
+    updated_at: '2020-04-04T12:09:05Z'
+    due_on: '2020-07-04T07:00:00Z'
     closed_at: null
     issues:
+        1277:
+            html_url: 'https://github.com/bolt/core/issues/1277'
+            number: 1277
+            title: 'Make `title_format` more flexible.'
+            user: bobdenotter
+            labels: [{ id: 1101873372, node_id: MDU6TGFiZWwxMTAxODczMzcy, url: 'https://api.github.com/repos/bolt/core/labels/tag:%20feature%20request', name: 'tag: feature request', color: cccccc, default: false, description: null }]
+            state: open
+            assignee: null
+            created_at: '2020-04-04T12:08:48Z'
+            updated_at: '2020-04-04T12:09:05Z'
+            closed_at: null
+            pull_request: false
+        1218:
+            html_url: 'https://github.com/bolt/core/issues/1218'
+            number: 1218
+            title: 'WYSIWYG settings are ignored'
+            user: peterboorsma
+            labels: [{ id: 1101873372, node_id: MDU6TGFiZWwxMTAxODczMzcy, url: 'https://api.github.com/repos/bolt/core/labels/tag:%20feature%20request', name: 'tag: feature request', color: cccccc, default: false, description: null }]
+            state: open
+            assignee: null
+            created_at: '2020-03-24T17:43:40Z'
+            updated_at: '2020-04-04T11:50:45Z'
+            closed_at: null
+            pull_request: false
+        1216:
+            html_url: 'https://github.com/bolt/core/issues/1216'
+            number: 1216
+            title: 'contenttype field height attribute not having an effect '
+            user: 0spinboson
+            labels: [{ id: 1101873372, node_id: MDU6TGFiZWwxMTAxODczMzcy, url: 'https://api.github.com/repos/bolt/core/labels/tag:%20feature%20request', name: 'tag: feature request', color: cccccc, default: false, description: null }]
+            state: open
+            assignee: null
+            created_at: '2020-03-23T07:22:37Z'
+            updated_at: '2020-03-25T13:31:08Z'
+            closed_at: null
+            pull_request: false
         1182:
             html_url: 'https://github.com/bolt/core/issues/1182'
             number: 1182
@@ -4340,6 +4664,30 @@
             assignee: null
             created_at: '2020-03-14T11:42:48Z'
             updated_at: '2020-03-14T11:42:48Z'
+            closed_at: null
+            pull_request: false
+        947:
+            html_url: 'https://github.com/bolt/core/issues/947'
+            number: 947
+            title: 'Support showinfo() twig function'
+            user: I-Valchev
+            labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
+            state: open
+            assignee: null
+            created_at: '2020-01-28T13:55:56Z'
+            updated_at: '2020-04-04T11:59:22Z'
+            closed_at: null
+            pull_request: false
+        946:
+            html_url: 'https://github.com/bolt/core/issues/946'
+            number: 946
+            title: 'Support collapsible option for collections'
+            user: I-Valchev
+            labels: [{ id: 1101873368, node_id: MDU6TGFiZWwxMTAxODczMzY4, url: 'https://api.github.com/repos/bolt/core/labels/new%20feature', name: 'new feature', color: 35b848, default: false, description: '' }]
+            state: open
+            assignee: null
+            created_at: '2020-01-28T12:58:15Z'
+            updated_at: '2020-04-04T11:53:42Z'
             closed_at: null
             pull_request: false
         939:
@@ -4396,11 +4744,11 @@
             title: 'Relations API Endpoints'
             user: JarJak
             labels: [{ id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20API', name: 'topic: API', color: b28133, default: false, description: 'All issues dealing with API-Platform' }, { id: 1318693756, node_id: MDU6TGFiZWwxMzE4NjkzNzU2, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20Relations', name: 'topic: Relations', color: 3c9fd8, default: false, description: '' }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2019-02-18T11:01:42Z'
-            updated_at: '2019-09-28T12:08:55Z'
-            closed_at: null
+            updated_at: '2020-04-01T15:11:49Z'
+            closed_at: '2020-04-01T15:11:48Z'
             pull_request: false
         265:
             html_url: 'https://github.com/bolt/core/issues/265'
@@ -4574,11 +4922,11 @@
         received_events_url: 'https://api.github.com/users/nestordedios/received_events'
         type: User
         site_admin: false
-    open_issues: 2
-    closed_issues: 0
+    open_issues: 1
+    closed_issues: 1
     state: open
     created_at: '2018-11-30T12:58:41Z'
-    updated_at: '2020-03-14T11:12:37Z'
+    updated_at: '2020-04-01T15:09:55Z'
     due_on: '2020-10-31T07:00:00Z'
     closed_at: null
     issues:
@@ -4600,11 +4948,11 @@
             title: 'REST/GraphQL API endpoints'
             user: nestordedios
             labels: [{ id: 1101873371, node_id: MDU6TGFiZWwxMTAxODczMzcx, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20API', name: 'topic: API', color: b28133, default: false, description: 'All issues dealing with API-Platform' }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2018-11-30T12:56:26Z'
-            updated_at: '2020-01-12T14:32:01Z'
-            closed_at: null
+            updated_at: '2020-04-01T15:10:49Z'
+            closed_at: '2020-04-01T15:09:55Z'
             pull_request: false
 -
     url: 'https://api.github.com/repos/bolt/core/milestones/15'
