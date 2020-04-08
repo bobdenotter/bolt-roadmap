@@ -3,9 +3,9 @@ Bolt Roadmap
 
 A repo to keep track of the Bolt Roadmap.
 
- - Github Repository: https://github.com/bolt/four
- - Bolt 4 roadmap: http://bit.ly/bolt4-roadmap
- - Planboard: http://bit.ly/bolt4-board (open for all, requires Github Auth) 
+ - Github Repository: https://github.com/bolt/core
+ - Bolt 4 Milestone issues: https://bit.ly/bolt4-roadmap
+ - The roadmap itself: https://roadmap.boltcms.io
  
  
  Installation
