@@ -1,3 +1,25 @@
 org: bolt
 repository: four
 
+# For the changelogs:
+groups:
+    featured: featured
+    security: security
+    'new-feature': added
+    'tag-bug-fix': fix
+    deprecated: removed
+    removed: removed
+    'topic-dx': code
+    'chore': code
+
+# https://github.com/ahmadawais/Emoji-Log
+groupnames:
+    featured: "👑 Highlighted new features"
+    fix: "🐛 Bug fixes"
+    security: "🔐 Security related changes"
+    added: "📦 Additions and new features"
+    removed: "🚚 Removals and/or deprecations"
+    miscellaneous: "🛠️ Miscellaneous"
+    tests: "🤖 Tests"
+    documentation: "📖 Documentation"
+    code: "⚙️ Code Quality / Developer Experience"

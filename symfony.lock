@@ -110,6 +110,9 @@
             "ref": "343a54894c535b6ef0d1a297f543793b3852ea9d"
         }
     },
+    "laminas/laminas-zendframework-bridge": {
+        "version": "1.0.3"
+    },
     "monolog/monolog": {
         "version": "1.23.0"
     },

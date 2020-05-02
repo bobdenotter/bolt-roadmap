@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h1>Since commit {{ commithash }}</h1>
+
+<textarea style="width: 100%; height: 400px;">
+{% for groupname, title in config.config.groupnames|filter((title,groupname) => prs[groupname] is defined ) %}
+
+### {{ title }}
+
+{% for pr in prs[groupname] %}
+ - {{ pr.title }} ({{ pr.user.login}}) [#{{ pr.number }}]({{ pr.html_url }})
+{#    --: "{% for label in pr.labels|default([]) %}{{ label.slug }}{% endfor %}" --#}
+
+{% endfor %}
+{% endfor %}
+</textarea>
+
+{#    {{ dump(commit) }}#}
+
+{#    {{ dump(config) }}#}
+
+{#    {{ dump(prs) }}#}
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+{% endblock %}
