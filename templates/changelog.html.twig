@@ -4,18 +4,24 @@
 
     <h1>Since commit {{ commithash }}</h1>
 
-<textarea style="width: 100%; height: 400px;">
+{% set output %}
 {% for groupname, title in config.config.groupnames|filter((title,groupname) => prs[groupname] is defined ) %}
 
 ### {{ title }}
 
 {% for pr in prs[groupname] %}
- - {{ pr.title }} ({{ pr.user.login}}) [#{{ pr.number }}]({{ pr.html_url }})
-{#    --: "{% for label in pr.labels|default([]) %}{{ label.slug }}{% endfor %}" --#}
-
+- {{ pr.title }} ({{ pr.user.login}}, [#{{ pr.number }}]({{ pr.html_url }}))
+{#    [label: <code>{% for label in pr.labels|default([]) %}{{ label.slug -}}#}
+{#    {%- if not loop.last %}</code>, <code>{% endif -%}#}
+{#    {%- endfor %}</code>]#}
 {% endfor %}
 {% endfor %}
+{% endset %}
+<textarea style="width: 100%; height: 40vh;">
+{{ output }}
 </textarea>
+
+{{ output|markdown }}
 
 {#    {{ dump(commit) }}#}
 

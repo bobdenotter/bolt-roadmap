@@ -6,11 +6,14 @@ groups:
     featured: featured
     security: security
     'new-feature': added
-    'tag-bug-fix': fix
     deprecated: removed
     removed: removed
     'topic-dx': code
     'chore': code
+    'topic-tests': tests
+    'tag-bug-fix': fix
+    'topic-design': design
+    'tag-documentation': documentation
 
 # https://github.com/ahmadawais/Emoji-Log
 groupnames:
@@ -23,3 +26,4 @@ groupnames:
     tests: "🤖 Tests"
     documentation: "📖 Documentation"
     code: "⚙️ Code Quality / Developer Experience"
+    design: "🎨 Design / User Interface"

@@ -79,9 +79,13 @@ class Changelog extends AbstractController
                 $groupedPrs['miscellaneous'][] = $pr;
                 continue;
             }
+
             foreach($pr['labels'] as $key => $label) {
                 $slug = $this->slugify->slugify($label['name']);
                 $pr['labels'][$key]['slug'] = $slug;
+            }
+
+            foreach($pr['labels'] as $key => $label) {
                 if (array_key_exists($slug, $groups)) {
                     $groupedPrs[$groups[$slug]][] = $pr;
                     continue(2);
