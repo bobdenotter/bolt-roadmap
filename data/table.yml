@@ -3159,13 +3159,61 @@
         type: User
         site_admin: false
     open_issues: 3
-    closed_issues: 127
+    closed_issues: 131
     state: open
     created_at: '2018-11-26T19:06:39Z'
-    updated_at: '2020-04-29T13:50:04Z'
-    due_on: '2020-05-09T07:00:00Z'
+    updated_at: '2020-05-24T11:40:58Z'
+    due_on: '2020-06-01T07:00:00Z'
     closed_at: null
     issues:
+        1403:
+            html_url: 'https://github.com/bolt/core/pull/1403'
+            number: 1403
+            title: 'Updates for skeleton theme'
+            user: bobdenotter
+            labels: [{ id: 1406210378, node_id: MDU6TGFiZWwxNDA2MjEwMzc4, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20%F0%9F%8E%A8%20design', name: 'topic: 🎨 design', color: bdffc3, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-05-24T10:19:05Z'
+            updated_at: '2020-05-24T11:41:02Z'
+            closed_at: '2020-05-24T11:40:58Z'
+            pull_request: true
+        1401:
+            html_url: 'https://github.com/bolt/core/pull/1401'
+            number: 1401
+            title: 'Working on Skeleton Theme (New.css instead of Sakura)'
+            user: bobdenotter
+            labels: [{ id: 1406210378, node_id: MDU6TGFiZWwxNDA2MjEwMzc4, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20%F0%9F%8E%A8%20design', name: 'topic: 🎨 design', color: bdffc3, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-05-22T15:57:20Z'
+            updated_at: '2020-05-24T10:21:37Z'
+            closed_at: '2020-05-24T09:10:38Z'
+            pull_request: true
+        1374:
+            html_url: 'https://github.com/bolt/core/issues/1374'
+            number: 1374
+            title: 'Handle changes in ContentTypes more gracefully.'
+            user: bobdenotter
+            labels: [{ id: 1105887151, node_id: MDU6TGFiZWwxMTA1ODg3MTUx, url: 'https://api.github.com/repos/bolt/core/labels/%F0%9F%90%9B%20tag:%20bug', name: '🐛 tag: bug', color: d93f0b, default: false, description: 'This is a bug.' }]
+            state: closed
+            assignee: null
+            created_at: '2020-05-13T10:13:45Z'
+            updated_at: '2020-05-22T07:09:49Z'
+            closed_at: '2020-05-22T07:09:49Z'
+            pull_request: false
+        1365:
+            html_url: 'https://github.com/bolt/core/pull/1365'
+            number: 1365
+            title: 'Tweaking a bunch of small things: Margins, paddings, minor UX thingies'
+            user: bobdenotter
+            labels: [{ id: 1145610340, node_id: MDU6TGFiZWwxMTQ1NjEwMzQw, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20UX', name: 'topic: UX', color: dd71bd, default: false, description: '' }, { id: 1406210378, node_id: MDU6TGFiZWwxNDA2MjEwMzc4, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20%F0%9F%8E%A8%20design', name: 'topic: 🎨 design', color: bdffc3, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-05-10T12:34:35Z'
+            updated_at: '2020-05-11T13:46:32Z'
+            closed_at: '2020-05-11T13:45:12Z'
+            pull_request: true
         1336:
             html_url: 'https://github.com/bolt/core/pull/1336'
             number: 1336
@@ -4723,7 +4771,7 @@
             state: open
             assignee: Dsduit
             created_at: '2018-10-23T19:11:51Z'
-            updated_at: '2020-04-28T09:35:45Z'
+            updated_at: '2020-05-06T18:56:53Z'
             closed_at: null
             pull_request: false
 -
@@ -4754,25 +4802,49 @@
         received_events_url: 'https://api.github.com/users/bobdenotter/received_events'
         type: User
         site_admin: false
-    open_issues: 17
-    closed_issues: 3
+    open_issues: 16
+    closed_issues: 6
     state: open
     created_at: '2018-11-26T20:12:29Z'
-    updated_at: '2020-05-01T13:10:45Z'
+    updated_at: '2020-05-24T15:59:26Z'
     due_on: '2020-07-04T07:00:00Z'
     closed_at: null
     issues:
+        1373:
+            html_url: 'https://github.com/bolt/core/issues/1373'
+            number: 1373
+            title: 'Update to `symfony/webpack-encore` version `0.30.0`'
+            user: bobdenotter
+            labels: [{ id: 1441792269, node_id: MDU6TGFiZWwxNDQxNzkyMjY5, url: 'https://api.github.com/repos/bolt/core/labels/Topic:%20Third%20Party%20%F0%9F%96%87', name: 'Topic: Third Party 🖇', color: fff4af, default: false, description: '' }]
+            state: closed
+            assignee: null
+            created_at: '2020-05-13T10:07:07Z'
+            updated_at: '2020-05-22T08:03:57Z'
+            closed_at: '2020-05-22T08:03:57Z'
+            pull_request: false
+        1372:
+            html_url: 'https://github.com/bolt/core/issues/1372'
+            number: 1372
+            title: 'Content unsaved changes alert'
+            user: I-Valchev
+            labels: [{ id: 1101873372, node_id: MDU6TGFiZWwxMTAxODczMzcy, url: 'https://api.github.com/repos/bolt/core/labels/tag:%20feature%20request', name: 'tag: feature request', color: cccccc, default: false, description: null }]
+            state: open
+            assignee: null
+            created_at: '2020-05-12T14:43:00Z'
+            updated_at: '2020-05-19T12:18:04Z'
+            closed_at: null
+            pull_request: false
         1347:
             html_url: 'https://github.com/bolt/core/issues/1347'
             number: 1347
             title: 'Warn user when upload file size exceeds limit'
             user: I-Valchev
             labels: [{ id: 1145610340, node_id: MDU6TGFiZWwxMTQ1NjEwMzQw, url: 'https://api.github.com/repos/bolt/core/labels/topic:%20UX', name: 'topic: UX', color: dd71bd, default: false, description: '' }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2020-05-01T13:10:45Z'
-            updated_at: '2020-05-01T13:10:45Z'
-            closed_at: null
+            updated_at: '2020-05-24T15:59:26Z'
+            closed_at: '2020-05-24T15:59:26Z'
             pull_request: false
         1319:
             html_url: 'https://github.com/bolt/core/issues/1319'
@@ -4816,11 +4888,11 @@
             title: 'Make `title_format` more flexible.'
             user: bobdenotter
             labels: [{ id: 1101873372, node_id: MDU6TGFiZWwxMTAxODczMzcy, url: 'https://api.github.com/repos/bolt/core/labels/tag:%20feature%20request', name: 'tag: feature request', color: cccccc, default: false, description: null }]
-            state: open
+            state: closed
             assignee: null
             created_at: '2020-04-04T12:08:48Z'
-            updated_at: '2020-04-04T12:09:05Z'
-            closed_at: null
+            updated_at: '2020-05-04T14:44:42Z'
+            closed_at: '2020-05-04T14:44:42Z'
             pull_request: false
         1218:
             html_url: 'https://github.com/bolt/core/issues/1218'
