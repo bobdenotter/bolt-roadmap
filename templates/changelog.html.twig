@@ -9,8 +9,9 @@
 
 ### {{ title }}
 
-{% for pr in prs[groupname] %}
+{% for pr in prs[groupname] %}{% if not app.request.get('ref') or app.request.get('ref') == pr.base.ref %}
 - {{ pr.title }} ({{ pr.user.login}}, [#{{ pr.number }}]({{ pr.html_url }}))
+{% endif %}
 {#    [label: <code>{% for label in pr.labels|default([]) %}{{ label.slug -}}#}
 {#    {%- if not loop.last %}</code>, <code>{% endif -%}#}
 {#    {%- endfor %}</code>]#}
