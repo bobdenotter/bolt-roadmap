@@ -35,9 +35,9 @@ class Changelog extends AbstractController
     }
 
     /**
-     * @Route("/changelog/{commitHash}")
+     * @Route("/changelog/{commitHash}/{basebranch}")
      */
-    public function changelog(Request $request, string $commitHash, string $stopHash = null)
+    public function changelog(Request $request, string $commitHash, string $basebranch='master')
     {
         if ($request->get('stop')) {
             $stopCommit = $this->client->api('repo')->commits()->show(
@@ -61,7 +61,7 @@ class Changelog extends AbstractController
         $prs = $this->client->api('pull_request')->all(
             $this->config->getConfig()['org'],
             $this->config->getConfig()['repository'],
-            ['state' => 'closed', 'per_page' => 30]
+            ['state' => 'closed', 'per_page' => 100, 'base' => $basebranch]
         );
 
         $groups = $this->config->getConfig()['groups'];
