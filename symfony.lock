@@ -92,6 +92,9 @@
             "ref": "81dee417d2cc60cd1c9d6208dff2ec22a1103e93"
         }
     },
+    "friendsofphp/proxy-manager-lts": {
+        "version": "v1.0.3"
+    },
     "guzzlehttp/guzzle": {
         "version": "6.3.3"
     },
@@ -109,6 +112,12 @@
             "version": "2.6",
             "ref": "343a54894c535b6ef0d1a297f543793b3852ea9d"
         }
+    },
+    "laminas/laminas-code": {
+        "version": "3.4.1"
+    },
+    "laminas/laminas-eventmanager": {
+        "version": "3.2.1"
     },
     "laminas/laminas-zendframework-bridge": {
         "version": "1.0.3"
@@ -238,6 +247,9 @@
     },
     "symfony/dependency-injection": {
         "version": "v4.1.6"
+    },
+    "symfony/deprecation-contracts": {
+        "version": "v2.2.0"
     },
     "symfony/doctrine-bridge": {
         "version": "v4.1.6"
@@ -373,6 +385,9 @@
     },
     "symfony/property-info": {
         "version": "v4.1.6"
+    },
+    "symfony/proxy-manager-bridge": {
+        "version": "v4.4.19"
     },
     "symfony/routing": {
         "version": "4.0",
