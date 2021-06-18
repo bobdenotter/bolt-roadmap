@@ -65,6 +65,7 @@ class Changelog extends AbstractController
         );
 
         $groups = $this->config->getConfig()['groups'];
+        $groupedPrs = [];
 
         foreach ($prs as $pr) {
             if ($timestamp > $pr['merged_at']) {

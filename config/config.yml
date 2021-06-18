@@ -4,12 +4,13 @@ repository: four
 # For the changelogs:
 groups:
     featured: featured
-    security: security
+    'topic-security': security
     'new-feature': added
     deprecated: removed
     removed: removed
     'topic-dx': code
     'chore': code
+    'refactor': code
     'topic-tests': tests
     'tag-bug-fix': fix
     'topic-design': design
