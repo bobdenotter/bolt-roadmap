@@ -15,6 +15,7 @@ groups:
     'tag-bug-fix': fix
     'topic-design': design
     'tag-documentation': documentation
+    'tag-enhancement': enhancement
 
 # https://github.com/ahmadawais/Emoji-Log
 groupnames:
@@ -28,3 +29,4 @@ groupnames:
     documentation: "📖 Documentation"
     code: "⚙️ Code Quality / Developer Experience"
     design: "🎨 Design / User Interface"
+    enhancement: "✨ Minor features and improvements"
